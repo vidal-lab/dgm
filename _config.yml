@@ -1,0 +1,52 @@
+# Site settings
+course_name: Deep Generative Models
+course_description: "Generative models have found widespread applications in science and engineering. Recent progress in deep learning has enabled the application of generative models to complex high-dimensional data such as images, videos, text and speech. This course will cover state-of-the-art deep generative models, including variational autoencoders (VAEs), auto-regressive models, diffusion models, and generative adversarial networks (GANs). The course will also illustrate various applications of deep generative models to image and video generation, text and speech generation, image captioning, text-to-image generation, and inverse problems."
+course_semester: "Fall 2024"
+
+baseurl: "/DGM-Penn" # the subpath of your site, e.g. /blog/
+url: "https://kaleab-k.github.io/" # the base hostname & protocol for your site
+
+schoolname: "University of Pennsylvania"
+schoolurl: "https://www.upenn.edu/"
+twitter_username: penn 
+
+address: |
+    University of Pennsylvania
+    Philadelphia, PA 19104 
+    United States
+
+# Set your Google Analytics tracking ID (set up yours at http://www.google.com/analytics/)
+# google_analytics: UA-XXXXXXXX-X
+
+### Do not change the followings unless you know what you are doing ###
+
+# Build settings
+markdown: kramdown
+
+# Other options
+permalink: blog/:year/:month/:title
+excerpt_separator: "<!--more-->"
+
+include: ['_images', '_css']
+exclude: ['develop']
+
+dateformat: "%m/%d/%Y"
+
+future: true
+collections:
+    events:
+        output: true
+    lectures:
+        output: true
+    assignments:
+        output: true
+    announcements:
+        output: false
+
+
+defaults:
+  - scope:
+      path: ""
+      type: "assignments"
+    values:
+      layout: "assignment"
