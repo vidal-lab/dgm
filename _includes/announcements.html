@@ -3,7 +3,7 @@
 
 {% assign events_to_show = "" | split: "" %}
 {% assign current_date = 'now' | date: "%Y-%m-%d" %}
-{% assign one_week_ahead = current_date | date: "%s" | plus: 604800 | date: "%Y-%m-%d" %}
+{% assign one_week_ahead = current_date | date: "%s" | plus: 504800 | date: "%Y-%m-%d" %}
 
 {% for e in all_events %}
     {% unless e.hide_from_announcments %}
@@ -21,7 +21,7 @@
 <div class="announcement-box" style="margin-top:30px">
 <h2>Updates</h2>
 <ul>
-    {% for n in all_events_sorted limit:5 %}
+    {% for n in all_events_sorted limit:3 %}
     <li class="no-p-margin">
         {% if n.type %}
             {% if n.type == 'lecture' %}
