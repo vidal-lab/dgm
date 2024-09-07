@@ -1,4 +1,7 @@
 policies:
-  - You have free 8 late days.
-  - You can use late days for assignments. A late day extends the deadline 24 hours.
-  - Once you have used all 8 late days, the penalty is 10% for each additional late day.
+  - You can discuss the problems with your peers at a high level, but you must write your own solutions.
+  - You can consult relevant background material, but you should not seek out solutions to the problems themselves. You should cite the outside material you use.
+  - For written problems and programming problems with jupyter notebook, please submit one pdf for all your solutions. 
+  - For programming problems with .py files, please zip it and submit it separately. 
+  - For written problems, typed solutions are nice, but clearly handwritten solutions are also fine. 
+  - For coding problems with jupyter notebooks, please include any necessary figures and explanations.
