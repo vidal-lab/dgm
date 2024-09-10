@@ -126,6 +126,7 @@ a.tosu { color: #b00000; background: #f5f5f5; text-decoration: none; padding: 2p
 .responsive-table .table-header { color: #0077CC; font-size: 14px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.03em; }
 .responsive-table .table-row { background-color: #ffffff; border-color: whitesmoke; border-width: 0.1em; border-style: solid; border-bottom: none; }
 .responsive-table .table-row-assignment { background-color: #d9edf7; }
+.responsive-table .table-row-project { background-color: #d9f7df; }
 .responsive-table .table-row-due { background-color: #FCF8E5; }
 .responsive-table .table-row-exam { background-color: #f2dede; }
 .responsive-table .col-1 { padding: 2px; flex-basis: 10%; }
