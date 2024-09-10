@@ -1,7 +1,7 @@
 ---
 type: lecture
 date: 2024-09-05T15:00:00+3:30
-title: Latent Variable Models 
+title: Probabilistic Principal Component Analysis 
 tldr: "Probabilistic Principal Component Analysis (PPCA)"
 thumbnail: /static_files/presentations/lec4.png
 links: 
