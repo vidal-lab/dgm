@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-09-17T15:00:00+3:30
+date: 2024-09-24T15:00:00+3:30
 title: Hidden Markov Models 
 thumbnail: /static_files/presentations/lec8.png
 links: 
