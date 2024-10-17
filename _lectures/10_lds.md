@@ -10,6 +10,8 @@ links:
       name: recording 1
     - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=86100c52-5a0f-4a08-9f9a-b2050141ab8e
       name: recording 2
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=7559915b-8a3b-4028-bb41-b20a0142ff22
+      name: recording 3
 ---
 **Suggested Readings:**
 - Introduction to Linear Dynamical Systems.
