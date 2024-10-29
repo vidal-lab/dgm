@@ -10,6 +10,8 @@ links:
       name: recording 1
     - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6f742cf1-fe0c-4a32-8ce9-b2110142e360
       name: recording 2
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0901906c-9dde-4dcc-ab7f-b213014298d1
+      name: recording 3
 ---
 **Suggested Readings:**
 - Introduction the RNN architecture
