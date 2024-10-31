@@ -6,6 +6,8 @@ thumbnail: /static_files/presentations/lec8.png
 links: 
     - url: /static_files/lectures/dgm24-lec16-transformers.pdf
       name: slides
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=381b6914-4b8e-4cd7-b3ec-b21801429958
+      name: recording
 ---
 **Suggested Readings:**
 - Introduction the Self-Attention mechanism
