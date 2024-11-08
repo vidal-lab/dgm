@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-11-31T15:00:00+3:30
+date: 2024-10-31T15:00:00+3:30
 title: BERT and Vision Transformers
 thumbnail: /static_files/presentations/lec8.png
 links: 
