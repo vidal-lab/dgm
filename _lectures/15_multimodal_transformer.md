@@ -7,7 +7,9 @@ links:
     - url: /static_files/lectures/dgm24-lec19-multimodal-transformers.pdf
       name: slides
     - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=eaa56aeb-0889-469d-bfe4-b2210152ae25
-      name: recording
+      name: recording 1 
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4a63a803-5f7c-4cab-b525-b2260153f19e
+      name: recording 2
 ---
 **Suggested Readings:**
 - ViLBERT (https://arxiv.org/abs/1908.02265)
