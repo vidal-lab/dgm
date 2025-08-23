@@ -1,15 +1,15 @@
 ---
 type: lecture
-date: 2025-08-26T17:00:00+3:30
+date: 2025-08-26T15:30:00+3:30
 title: Introduction and Background 
 tldr: "Introduction to Deep Generative Models, History, and Applications"
 thumbnail: /static_files/presentations/lec1.png
 links: 
-    - url: /static_files/lectures/dgm24-lec1-syllabus.pdf
+    - url: /static_files/lectures/dgm25-lec1-syllabus.pdf
       name: syllabus
-    - url: /static_files/lectures/dgm24-lec1-intro.pdf
+    - url: /static_files/lectures/dgm25-lec1-intro.pdf
       name: slides
-    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=97ea5cf8-d437-499c-a36b-b1de0181da82
+    - url: #
       name: recording
 ---
 **Suggested Readings:**

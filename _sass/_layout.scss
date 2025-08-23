@@ -1,5 +1,14 @@
 
 
+/**
+ * Body layout
+ */
+body {
+    min-height: 100vh;
+    position: relative;
+    padding-bottom: 200px; /* Height of footer */
+}
+
 /* .site-nav {
     float: right;
     line-height: 40px;
@@ -76,7 +85,9 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     background: #020c1f url(https://www.upenn.edu/themes/custom/penn_global/assets/img//footer-16.png) no-repeat 50% 30%;
     background-size: cover;
 }

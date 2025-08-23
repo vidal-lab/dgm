@@ -13,6 +13,32 @@
 .header-texture {
     opacity: $header-background-opacity;
     filter: invert($header-background-invert);
+    animation: backgroundShift 60s ease-in-out infinite;
+    background-size: cover !important;
+    background-position: center center;
+}
+
+@keyframes backgroundShift {
+    0% {
+        background-position: center center;
+        transform: scale(1);
+    }
+    25% {
+        background-position: 60% 40%;
+        transform: scale(1.01);
+    }
+    50% {
+        background-position: 40% 60%;
+        transform: scale(1);
+    }
+    75% {
+        background-position: 60% 60%;
+        transform: scale(1.01);
+    }
+    100% {
+        background-position: center center;
+        transform: scale(1);
+    }
 }
 
 .site-title, .site-title a {
@@ -25,6 +51,8 @@
     font-weight: 500;
 		font-family: 'Titillium Web', sans-serif;
     color: $header-text-color;
+    transition: all 0.3s ease;
+    animation: titleGlow 4s ease-in-out infinite;
     &,
     &:visited {
         color: $header-text-color;
@@ -32,12 +60,32 @@
     &,
     &:hover {
 	text-decoration: none;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
+}
+
+@keyframes titleGlow {
+    0%, 100% {
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+    }
+    50% {
+        text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+    }
 }
 
 .site-header .wrapper {
 	padding-top: 20px;
 	position: relative;
+	animation: headerFloat 6s ease-in-out infinite;
+}
+
+@keyframes headerFloat {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-2px);
+    }
 }
 
 .site-nav ul li a {
@@ -70,11 +118,31 @@
 	padding: 0 0 2px 0;
 	position: relative;
 	vertical-align: top;
+	transition: all 0.3s ease;
+}
+
+.site-nav .menu > li:hover {
+	border-bottom-color: $clemson-orange;
+	transform: translateY(-1px);
+	animation: navPulse 0.6s ease-in-out;
+}
+
+@keyframes navPulse {
+    0% {
+        transform: translateY(-1px) scale(1);
+    }
+    50% {
+        transform: translateY(-1px) scale(1.05);
+    }
+    100% {
+        transform: translateY(-1px) scale(1);
+    }
 }
 
 .site-nav a {
 	display: block;
         color: $header-text-color;
+        text-decoration: none;
 }
 
 /* Sub Menu */
@@ -163,6 +231,7 @@ z-index:999;
         color: $header-text-color;
     background: $clemson-purple;
         line-height: $base-line-height;
+        text-decoration: none;
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
