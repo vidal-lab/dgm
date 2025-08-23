@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-11-07T15:00:00+3:30
+date: 2025-11-07T17:00:00+3:30
 title: Transformers for Vision and Language
 thumbnail: /static_files/presentations/lec8.png
 links: 

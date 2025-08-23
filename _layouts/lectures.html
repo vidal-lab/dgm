@@ -2,36 +2,251 @@
 layout: page
 ---
 
-{{ content }}
+<div class="lectures-container">
+    <header class="lectures-header">
+        <h1>Course Lectures</h1>
+        <p class="lectures-description">{{ content }}</p>
+    </header>
 
-<ul id="archive">
-{% for lecture in site.lectures %}
-<li class="archiveposturl" style="background: transparent">
-<div class="lecture-container">
-    {% if lecture.thumbnail %}
-    <div class="thumbnail">
-      <div class="center-cropped" style="margin-top:5px;margin-bottom:5px;background-image: url('{{ lecture.thumbnail | prepend: site.baseurl }}');">
-        <img src="{{ lecture.thumbnail | prepend: site.baseurl }}"/>
-      </div>
-    </div>
-    {% endif %}
-    <div class="content">
-        <span style="font-weight: bold;">{{ lecture.title }}</span><br>
+    <div class="lectures-grid">
+        {% for lecture in site.lectures %}
+        <div class="lecture-card">
+            {% if lecture.thumbnail %}
+            <div class="lecture-thumbnail">
+                <img src="{{ lecture.thumbnail | prepend: site.baseurl }}" alt="{{ lecture.title }}" />
+            </div>
+            {% endif %}
+            
+            <div class="lecture-content">
+                <div class="lecture-header">
+                    <h3 class="lecture-title">{{ lecture.title }}</h3>
+                    <div class="lecture-date">
+                        {{ lecture.date | date: "%b %d, %Y" }}
+                    </div>
+                </div>
+                
+                <div class="lecture-summary">
+                    <strong>tl;dr:</strong> {{ lecture.tldr }}
+                </div>
+                
+                <div class="lecture-links">
+                    {% include lecture_links.html lecture=lecture %}
+                </div>
 
-        <strong>tl;dr:</strong> {{ lecture.tldr }}
-        <br/>
-        <strong>
-        {% include lecture_links.html lecture=lecture %}
-        </strong>
-
-        {% if lecture.content != '' %}
-        <br/>
-        <div class="markdown-content" style="margin-top: 3px;">
-        {{ lecture.content }}
+                {% if lecture.content != '' %}
+                <div class="lecture-details">
+                    {{ lecture.content }}
+                </div>
+                {% endif %}
+            </div>
         </div>
-        {% endif %}
+        {% endfor %}
     </div>
 </div>
-</li>
-{% endfor %}
-</ul>
+
+<style>
+.lectures-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.lectures-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.lectures-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.lectures-description {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.lectures-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2rem;
+}
+
+.lecture-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.lecture-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    border-color: #cbd5e0;
+}
+
+.lecture-thumbnail {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background: #f8fafc;
+}
+
+.lecture-thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.lecture-card:hover .lecture-thumbnail img {
+    transform: scale(1.05);
+}
+
+.lecture-content {
+    padding: 1.75rem;
+}
+
+.lecture-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+    gap: 1rem;
+}
+
+.lecture-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin: 0;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.lecture-date {
+    font-size: 0.875rem;
+    color: #64748b;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 0.375rem 0.875rem;
+    background: #f1f5f9;
+    border-radius: 6px;
+    border: 1px solid #e2e8f0;
+}
+
+.lecture-summary {
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 1.25rem;
+    font-size: 0.95rem;
+}
+
+.lecture-summary strong {
+    color: #1e293b;
+}
+
+.lecture-links {
+    margin-bottom: 1rem;
+}
+
+.lecture-links a {
+    display: inline-block;
+    padding: 0.625rem 1.125rem;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(59, 130, 246, 0.1);
+}
+
+.lecture-links a:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
+}
+
+.lecture-details {
+    margin-top: 1.25rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid #e2e8f0;
+    color: #475569;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .lectures-container {
+        padding: 1rem 0.5rem;
+    }
+    
+    .lectures-header h1 {
+        font-size: 2rem;
+    }
+    
+    .lectures-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .lecture-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .lecture-date {
+        align-self: flex-start;
+    }
+    
+    .lecture-links a {
+        display: block;
+        margin: 0.25rem 0;
+        text-align: center;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .lecture-card {
+        background: #1a202c;
+        border-color: #2d3748;
+    }
+    
+    .lecture-title {
+        color: #e2e8f0;
+    }
+    
+    .lecture-summary {
+        color: #a0aec0;
+    }
+    
+    .lecture-summary strong {
+        color: #e2e8f0;
+    }
+    
+    .lecture-date {
+        background: #2d3748;
+        color: #a0aec0;
+        border-color: #4a5568;
+    }
+    
+    .lecture-details {
+        border-color: #2d3748;
+        color: #a0aec0;
+    }
+}
+</style>

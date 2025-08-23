@@ -1,7 +1,7 @@
 # Site settings
 course_name: Deep Generative Models
 course_description: "Generative models have found widespread applications in science and engineering. Recent progress in deep learning has enabled the application of generative models to complex high-dimensional data such as images, videos, text and speech. This course will cover state-of-the-art deep generative models, including variational autoencoders (VAEs), auto-regressive models, diffusion models, and generative adversarial networks (GANs). The course will also illustrate various applications of deep generative models to image and video generation, text and speech generation, image captioning, text-to-image generation, and inverse problems."
-course_semester: "Fall 2024"
+course_semester: "Fall 2025"
 
 baseurl: "/dgm" # the subpath of your site, e.g. /blog/
 url: "https://vidal-lab.github.io/" # the base hostname & protocol for your site
@@ -30,7 +30,7 @@ excerpt_separator: "<!--more-->"
 include: ['_images', '_css']
 exclude: ['develop']
 
-dateformat: "%m/%d/%Y"
+dateformat: "%b %d, %Y"
 
 future: true
 collections:

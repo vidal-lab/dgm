@@ -2,59 +2,252 @@
 layout: default
 ---
 
-<header class="post-header">
-    <h1 class="post-title">Schedule</h1>
-    <h4><b>Class Time: Tuesdays and Thursdays, 3:30 PM - 4:59 PM</b></h4>
-    <h4><b>Location: WLNT 401B</b></h4>
+<div class="schedule-container">
+    <header class="schedule-header">
+        <h1>Course Schedule</h1>
+        <div class="schedule-info">
+            <div class="info-item">
+                <strong>Class Time:</strong> Tuesdays and Thursdays, 3:30 PM - 4:59 PM
+            </div>
+            <div class="info-item">
+                <strong>Location:</strong> AGH 105
+            </div>
+            <div class="info-item">
+                <strong>Office Hours:</strong> Professor René Vidal: Thursday 5pm-5:45pm, AGH 615
+            </div>
+        </div>
+    </header>
 
-    <h4 class="post-title"><b>Office Hours:</b></h4>
-    <h4>Professor René Vidal: Thursday 5pm-5:45pm, WLNT 463C</h4>
+    {{ content }}
 
-    <h4>TAs will rotate office hours every three weeks. <br>
-        <ul>
-            <li>Darshan and Tianjiao: Tues 2-3pm. 09/03, 09/24, 10/15, 11/05</li>
-            <li>Ryan and Liangzu: Fri 12:30-1:30pm. 09/13, 10/04, 10/25, 11/15</li>
-            <li>Jinqi and Kaleab: Wed 3-4pm. 09/18, 10/09, 10/30, 11/20</li>
-        </ul>
-        Location: WLNT 452C <br>
-        TAs will hold extra office hours on the week that homework is due. <br>
-    </h4>
-
-
-</header>
-
-
-{{ content }}
-
-<div class="home" style="font-size: 0.8em;">
-    <ul class="responsive-table" style="margin-left: 0;">
-        <li class="table-header">
+    <div class="schedule-table">
+        <div class="table-header">
             <div class="col col-1">Event</div>
             <div class="col col-1-2">Date</div>
-            <div class="col col-2">Description</div>
-            <div class="col col-4">Course Material</div>
-        </li>
+            <div class="col col-2">Title</div>
+            <div class="col col-4">Topics</div>
+        </div>
         
-        {% assign all_assignment_dues = site.assignments | map: "due_event" %}
-
-        {% assign all_events = site.events | concat: site.lectures %}
-        {% assign all_events = all_events | concat: site.assignments %}
-        {% assign all_events = all_events | concat: all_assignment_dues %}
+        {% assign all_events = site.data.events | concat: site.data.lectures %}
+        {% assign all_events = all_events | concat: site.data.projects %}
+        {% assign all_events = all_events | concat: site.data.assignments %}
         {% assign all_events_sorted = all_events | sort: 'date' %}
 
         {% for event in all_events_sorted %}
-        <li class="table-row table-row-{{ event.type}}">
+        <div class="table-row table-row-{{ event.type}}">
             {% include schedule_row_{{ event.type }}.html event=event %}
-        </li>
+        </div>
         {% endfor %}
 
-        <!-- Static row for the project happening on Dec 12-19 -->
-        <li class="table-row table-row-project">
-            <div class="col col-1" style="color: #31708f ;font-weight: bold;">Project</div>
-            <div class="col col-1-2" data-label="Date" style="color: #31708f ;font-weight: bold;">Dec 18, 2024</div>
-            <div class="col col-2" style="color: #31708f ;font-weight: bold;" data-label="Description">Final group project presentation</div>
-            <div class="col col-4" data-label="Project Guideline"><a href="#"></a></div>
-        </li>
-
-    </ul>
+        
+    </div>
 </div>
+
+<style>
+.schedule-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.schedule-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.schedule-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.schedule-info {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.info-item {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.schedule-table {
+    background: white;
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table-header {
+    background: #f8f9fa;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #495057;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.table-row {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    border-bottom: 1px solid #f1f3f4;
+    transition: background-color 0.2s ease;
+    min-height: 60px;
+}
+
+.table-row:hover {
+    background: #f8f9fa;
+}
+
+.table-row:last-child {
+    border-bottom: none;
+}
+
+.table-row-lecture {
+    border-left: 3px solid #007bff;
+}
+
+.table-row-assignment {
+    border-left: 3px solid #ffc107;
+    background: #fffbf0;
+}
+
+.table-row-project {
+    border-left: 3px solid #28a745;
+    background: #f8fff9;
+}
+
+.table-row-due {
+    border-left: 3px solid #dc3545;
+    background: #fff5f5;
+}
+
+.table-row-grades {
+    border-left: 3px solid #6f42c1;
+    background: #f8f5ff;
+}
+
+.col {
+    padding: 0 0.75rem;
+}
+
+.col-1 {
+    flex: 0 0 15%;
+}
+
+.col-1-2 {
+    flex: 0 0 20%;
+    text-align: center;
+}
+
+.col-2 {
+    flex: 0 0 25%;
+}
+
+.col-4 {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+}
+
+.event-badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    background: #e9ecef;
+    color: #495057;
+}
+
+.table-row-lecture .event-badge {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.table-row-assignment .event-badge {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.table-row-project .event-badge {
+    background: #d4edda;
+    color: #155724;
+}
+
+.table-row-due .event-badge {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.table-row-grades .event-badge {
+    background: #e2d9f3;
+    color: #6f42c1;
+}
+
+.col a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.col a:hover {
+    text-decoration: underline;
+}
+
+.markdown-content {
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+
+.col-4 {
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .schedule-container {
+        padding: 1rem 0.5rem;
+    }
+    
+    .schedule-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .table-header {
+        display: none;
+    }
+    
+            .table-row {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.5rem;
+            padding: 1rem;
+            min-height: auto;
+        }
+    
+    .col {
+        width: 100%;
+        padding: 0;
+    }
+    
+    .col-1-2 {
+        text-align: left;
+    }
+    
+    .col:before {
+        content: attr(data-label) ": ";
+        font-weight: 600;
+        color: #6c757d;
+        margin-right: 0.5rem;
+    }
+}
+</style>

@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-12-03T15:00:00+3:30
+date: 2025-12-05T17:00:00+3:30
 title: Score Matching with Diffusion Models 
 thumbnail: /static_files/presentations/lec8.png
 links: 

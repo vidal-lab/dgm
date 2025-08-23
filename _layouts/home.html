@@ -2,65 +2,431 @@
 layout: default
 ---
 
-<div class="home">
+<div class="home-container">
+    <header class="home-header">
+        <div class="course-title">
+            <h1>{{ site.course_name }}</h1>
+            <div class="course-semester">{{ site.course_semester }}</div>
+        </div>
+        <div class="header-accent"></div>
+    </header>
 
-    <h1>{{ site.course_name }} <span style="font-size: 20px;color: #0006;">/ {{ site.course_semester }} </span></h1>
+    <div class="home-content">
+        {% include announcements.html %}
+        
+        <section class="course-description-section">
+            <h2>
+                <span class="section-icon">📖</span>
+                Course Description
+            </h2>
+            <div class="description-content">
+                <p>{{ site.course_description }}</p>
+            </div>
+        </section>
 
-    {% include announcements.html %}
-    <br />
+        <section class="canvas-section">
+            <h2>
+                <span class="section-icon">🎓</span>
+                Course Access
+            </h2>
+            <div class="canvas-link">
+                {{ content }}
+            </div>
+        </section>
 
-    <h2>Course Description</h2>
-    <p>{{ site.course_description }}</p>
-    
-    {{ content }}
-
-    {% if site.data.previous_offering and site.data.previous_offering.offerings and site.data.previous_offering.offerings.size > 0 %}
-    <h2>Previous Offerings</h2>
-    <ul class="previous-offerings">
-    {% for offer in site.data.previous_offering.offerings %}
-    <li><a href="{{ offer.url }}">{{offer.title}}</a></li>
-    {% endfor %}
-    </ul>
-    {% endif %}
-
-    <br>
-    <div>
-        <div style="width:35%; float: left">
-            <!-- <h2>Instructors</h2> -->
-            <!-- <div class="image--cover-container">
-                <img src="{{site.data.people.instructor.profile_pic | prepend: site.baseurl }}" class="image--cover">
-                <p>{{site.data.people.instructor.name}}</p>
-            </div> -->
-
-            <div class="profile-pic-gallary ">
-                <h2>Instructor</h2>
-                {% for ins in site.data.people.instructors %}
-                <div class="image--cover-container">
-                    <img src="{{ins.profile_pic | prepend: site.baseurl }}" class="image--cover">
-                    {% if ins.webpage %}
-                    <p><a href="{{ ins.webpage }}">{{ins.name}}</a></p>
-                    {% else %}
-                    <p>{{ins.name}}</p>
-                    {% endif %}
-                </div>
+        {% if site.data.previous_offering and site.data.previous_offering.offerings and site.data.previous_offering.offerings.size > 0 %}
+        <section class="previous-offerings-section">
+            <h2>
+                <span class="section-icon">📚</span>
+                Previous Offerings
+            </h2>
+            <div class="offerings-list">
+                {% for offer in site.data.previous_offering.offerings %}
+                <a href="{{ offer.url }}" class="offering-link">{{offer.title}}</a>
                 {% endfor %}
             </div>
-        </div>
+        </section>
+        {% endif %}
 
-        <div style="width:65%; float: left">
-            <div class="profile-pic-gallary ">
-                <h2>Teaching Assistants</h2>
-                {% for ta in site.data.people.teaching_assistants %}
-                <div class="image--cover-container">
-                    <img src="{{ta.profile_pic | prepend: site.baseurl }}" class="image--cover">
-                    {% if ta.webpage %}
-                    <p><a href="{{ ta.webpage }}">{{ta.name}}</a></p>
-                    {% else %}
-                    <p>{{ta.name}}</p>
-                    {% endif %}
+        <section class="team-section">
+            <div class="team-grid">
+                <div class="instructor-section">
+                    <h2>
+                        <span class="section-icon">👨‍🏫</span>
+                        Instructor
+                    </h2>
+                    <div class="instructor-cards">
+                        {% for ins in site.data.people.instructors %}
+                        <div class="instructor-card">
+                            <div class="instructor-image">
+                                <img src="{{ins.profile_pic | prepend: site.baseurl }}" alt="{{ins.name}}">
+                            </div>
+                            <div class="instructor-info">
+                                {% if ins.webpage %}
+                                <h3><a href="{{ ins.webpage }}">{{ins.name}}</a></h3>
+                                {% else %}
+                                <h3>{{ins.name}}</h3>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
                 </div>
-                {% endfor %}
+
+                <div class="tas-section">
+                    <h2>
+                        <span class="section-icon">👥</span>
+                        Teaching Assistants
+                    </h2>
+                    <div class="ta-cards">
+                        {% for ta in site.data.people.teaching_assistants %}
+                        <div class="ta-card">
+                            <div class="ta-image">
+                                <img src="{{ta.profile_pic | prepend: site.baseurl }}" alt="{{ta.name}}">
+                            </div>
+                            <div class="ta-info">
+                                {% if ta.webpage %}
+                                <h3><a href="{{ ta.webpage }}">{{ta.name}}</a></h3>
+                                {% else %}
+                                <h3>{{ta.name}}</h3>
+                                {% endif %}
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
 </div>
+
+<style>
+.home-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.home-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.course-title {
+    margin-bottom: 1rem;
+}
+
+.course-title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.025em;
+}
+
+.course-semester {
+    font-size: 1.25rem;
+    color: #64748b;
+    font-weight: 500;
+}
+
+.header-accent {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    margin: 0 auto;
+    border-radius: 2px;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.home-content section {
+    margin-bottom: 2rem;
+}
+
+.home-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.section-icon {
+    font-size: 1.25rem;
+    opacity: 0.8;
+}
+
+.description-content {
+    padding-left: 2rem;
+    border-left: 3px solid #e2e8f0;
+    margin-left: 1.5rem;
+}
+
+.description-content p {
+    color: #4a5568;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+.canvas-section {
+    padding-left: 2rem;
+    border-left: 3px solid #e2e8f0;
+    margin-left: 1.5rem;
+}
+
+.canvas-link {
+    color: #4a5568;
+    line-height: 1.7;
+}
+
+.canvas-link a {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.canvas-link a:hover {
+    color: #2563eb;
+    text-decoration: underline;
+}
+
+.previous-offerings-section {
+    padding-left: 2rem;
+    border-left: 3px solid #e2e8f0;
+    margin-left: 1.5rem;
+}
+
+.offerings-list {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.offering-link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background: #f1f5f9;
+    border: 1px solid #e2e8f0;
+    position: relative;
+}
+
+.offering-link:hover {
+    color: #2563eb;
+    background: #e2e8f0;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.team-section {
+    margin-top: 2rem;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    margin-top: 1.5rem;
+}
+
+.instructor-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.instructor-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.instructor-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1.5rem;
+    border: 4px solid #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.instructor-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.instructor-info h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin: 0;
+}
+
+.instructor-info h3 a {
+    color: #1a202c;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.instructor-info h3 a:hover {
+    color: #3b82f6;
+}
+
+.ta-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1.5rem;
+}
+
+.ta-card {
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.ta-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.ta-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 1rem;
+    border: 3px solid #f1f5f9;
+}
+
+.ta-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.ta-info h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin: 0;
+}
+
+.ta-info h3 a {
+    color: #1a202c;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.ta-info h3 a:hover {
+    color: #3b82f6;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 1rem 0.5rem;
+    }
+    
+    .course-title h1 {
+        font-size: 2rem;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .ta-cards {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+    
+    .instructor-image {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .ta-image {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .description-content,
+    .canvas-section,
+    .previous-offerings-section {
+        padding-left: 1.5rem;
+        margin-left: 1rem;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .course-title h1 {
+        color: #000000;
+    }
+    
+    .course-semester {
+        color: #4a5568;
+    }
+    
+    .home-content h2 {
+        color: #000000;
+    }
+    
+    .description-content,
+    .canvas-section,
+    .previous-offerings-section {
+        border-left-color: #2d3748;
+    }
+    
+    .description-content p,
+    .canvas-link {
+        color: #4a5568;
+    }
+    
+    .instructor-image {
+        border-color: #4a5568;
+    }
+    
+    .ta-image {
+        border-color: #4a5568;
+    }
+    
+    .instructor-info h3,
+    .instructor-info h3 a,
+    .ta-info h3,
+    .ta-info h3 a {
+        color: #000000;
+    }
+    
+    .instructor-info h3 a:hover,
+    .ta-info h3 a:hover {
+        color: #3b82f6;
+    }
+}
+</style>

@@ -1,21 +1,9 @@
 instructors:
-  - name: René Vidal
+  - name: Prof. René Vidal
     profile_pic: /_images/pp/vidal.jpg
     webpage: https://www.grasp.upenn.edu/people/rene-vidal/
 
 teaching_assistants:
-  - name: Ryan Chan
-    profile_pic: /_images/pp/ryan_chan.jpg
-    webpage: https://ryanchankh.github.io/
-
-  - name: Darshan Thaker
-    profile_pic: /_images/pp/darshan_thaker.jpg
-    webpage: https://darshanthaker.github.io/
-
-  - name: Jinqi Luo
-    profile_pic: /_images/pp/jinqi_luo.jpg
-    webpage: https://peterljq.github.io/
-
   - name: Tianjiao Ding
     profile_pic: /_images/pp/tianjiao_ding.jpg
     webpage: https://tianjiaoding.com/
@@ -27,3 +15,15 @@ teaching_assistants:
   - name: Kaleab A. Kinfu
     profile_pic: /_images/pp/kaleab_kinfu.jpg
     webpage: https://kaleab.me/
+
+  - name: Yuyan Ge
+    profile_pic: /_images/pp/yuyan_ge.jpeg
+    webpage: https://www.grasp.upenn.edu/people/yuyan-ge/
+
+  - name: Tadipat Uday Kiran Reddy
+    profile_pic: /_images/pp/uday_kiran_reddy.jpeg
+    webpage: https://tudaykiranreddy.github.io/
+
+  - name: Kostas Emmanouilidis
+    profile_pic: /_images/pp/kostas_emmanouilidis.jpg
+    webpage: https://emmanouilidisk.github.io/

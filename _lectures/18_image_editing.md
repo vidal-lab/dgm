@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-11-26T15:00:00+3:30
+date: 2025-11-28T17:00:00+3:30
 title: Image Editing with Diffusion Models 
 thumbnail: /static_files/presentations/lec8.png
 links: 

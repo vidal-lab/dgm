@@ -1,0 +1,20 @@
+- type: due
+  date: '2025-09-22T17:00:00+03:30'
+  title: Homework 1 Due
+  hw_num: '1'
+  action: due
+- type: due
+  date: '2025-10-24T17:00:00+03:30'
+  title: Homework 2 Due
+  hw_num: '2'
+  action: due
+- type: grades
+  date: '2025-11-08T17:00:00+03:30'
+  title: Homework 2 Grades Released
+  hw_num: '2'
+  action: grades
+- type: due
+  date: '2025-11-18T17:00:00+03:30'
+  title: Homework 3 Due
+  hw_num: '3'
+  action: due

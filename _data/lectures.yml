@@ -1,0 +1,182 @@
+- type: lecture
+  date: '2025-08-26T17:00:00+03:30'
+  title: Introduction
+  overview: Introduction
+  topics: Introduction
+  lecture_num: 1
+  content: Introduction
+- type: lecture
+  date: '2025-08-28T17:00:00+03:30'
+  title: Background
+  overview: Background
+  topics: Probability, Statistics, MLE, SGD, Learning
+  lecture_num: 2
+  content: Probability, Statistics, MLE, SGD, Learning
+- type: lecture
+  date: '2025-09-02T17:00:00+03:30'
+  title: Latent Variable Models
+  overview: Latent Variable Models
+  topics: Gaussian Models, PPCA
+  lecture_num: 3
+  content: Gaussian Models, PPCA
+- type: lecture
+  date: '2025-09-04T17:00:00+03:30'
+  title: Latent Variable Models
+  overview: Latent Variable Models
+  topics: PPCA
+  lecture_num: 4
+  content: PPCA
+- type: lecture
+  date: '2025-09-09T17:00:00+03:30'
+  title: Latent Variable Models
+  overview: Latent Variable Models
+  topics: Variational Inference
+  lecture_num: 5
+  content: Variational Inference
+- type: lecture
+  date: '2025-09-11T17:00:00+03:30'
+  title: Latent Variable Models
+  overview: Latent Variable Models
+  topics: EM, EM for GMMs, VAE (definition)
+  lecture_num: 6
+  content: EM, EM for GMMs, VAE (definition)
+- type: lecture
+  date: '2025-09-16T17:00:00+03:30'
+  title: Latent Variable Models
+  overview: Latent Variable Models
+  topics: VAE (reparameterization trick) - application + hands on session
+  lecture_num: 7
+  content: VAE (reparameterization trick) - application + hands on session
+- type: lecture
+  date: '2025-09-18T17:00:00+03:30'
+  title: Shallow Auto-regressive Models
+  overview: Shallow Auto-regressive Models
+  topics: Markov Models
+  lecture_num: 8
+  content: Markov Models
+- type: lecture
+  date: '2025-09-23T17:00:00+03:30'
+  title: Shallow Auto-regressive Models
+  overview: Shallow Auto-regressive Models
+  topics: HMMs (Inference and Decoding)
+  lecture_num: 9
+  content: HMMs (Inference and Decoding)
+- type: lecture
+  date: '2025-09-25T17:00:00+03:30'
+  title: Recitation
+  overview: Recitation
+  topics: Review HW1. Hands-on first with programming, analytical
+  lecture_num: 10
+  content: Review HW1. Hands-on first with programming, analytical
+- type: lecture
+  date: '2025-09-30T17:00:00+03:30'
+  title: Shallow Auto-regressive Models
+  overview: Shallow Auto-regressive Models
+  topics: HMMs (Learning, Examples)
+  lecture_num: 11
+  content: HMMs (Learning, Examples)
+- type: lecture
+  date: '2025-10-02T17:00:00+03:30'
+  title: Shallow Auto-regressive Models
+  overview: Shallow Auto-regressive Models
+  topics: Linear Dynamical systems (Model, Inference)
+  lecture_num: 12
+  content: Linear Dynamical systems (Model, Inference)
+- type: lecture
+  date: '2025-10-07T17:00:00+03:30'
+  title: Shallow Auto-regressive Models
+  overview: Shallow Auto-regressive Models
+  topics: Linear Dynamical systems (Learning)
+  lecture_num: 13
+  content: Linear Dynamical systems (Learning)
+- type: lecture
+  date: '2025-10-14T17:00:00+03:30'
+  title: Shallow Auto-regressive Models
+  overview: Shallow Auto-regressive Models
+  topics: Linear Dynamical systems (Application)
+  lecture_num: 14
+  content: Linear Dynamical systems (Application)
+- type: lecture
+  date: '2025-10-16T17:00:00+03:30'
+  title: Deep Auto-regressive Models
+  overview: Deep Auto-regressive Models
+  topics: RNNs - architecture
+  lecture_num: 15
+  content: RNNs - architecture
+- type: lecture
+  date: '2025-10-21T17:00:00+03:30'
+  title: Deep Auto-regressive Models
+  overview: Deep Auto-regressive Models
+  topics: RNNS -  training, vanishing gradients, application
+  lecture_num: 16
+  content: RNNS -  training, vanishing gradients, application
+- type: lecture
+  date: '2025-10-23T17:00:00+03:30'
+  title: Deep Auto-regressive Models
+  overview: Deep Auto-regressive Models
+  topics: RNNs - seq2seq and attention
+  lecture_num: 17
+  content: RNNs - seq2seq and attention
+- type: lecture
+  date: '2025-10-28T17:00:00+03:30'
+  title: Deep Auto-regressive Models
+  overview: Deep Auto-regressive Models
+  topics: Transformers - Attention is all you need
+  lecture_num: 18
+  content: Transformers - Attention is all you need
+- type: lecture
+  date: '2025-10-30T17:00:00+03:30'
+  title: Deep Auto-regressive Models
+  overview: Deep Auto-regressive Models
+  topics: Transformers - BERT / ViT
+  lecture_num: 19
+  content: Transformers - BERT / ViT
+- type: lecture
+  date: '2025-11-04T17:00:00+03:30'
+  title: Deep Auto-regressive Models
+  overview: Deep Auto-regressive Models
+  topics: Transformers - Vision Applications of Transformers
+  lecture_num: 20
+  content: Transformers - Vision Applications of Transformers
+- type: lecture
+  date: '2025-11-06T17:00:00+03:30'
+  title: Transformers - DALLE + Hands-On Session
+  overview: ''
+  topics: Transformers - DALLE + Hands-On Session
+  lecture_num: 21
+  content: Transformers - DALLE + Hands-On Session
+- type: lecture
+  date: '2025-11-11T17:00:00+03:30'
+  title: Diffusion Models - A VAE Perspective
+  overview: ''
+  topics: Diffusion Models - A VAE Perspective
+  lecture_num: 22
+  content: Diffusion Models - A VAE Perspective
+- type: lecture
+  date: '2025-11-13T17:00:00+03:30'
+  title: Diffusion Models - A VAE Perspective II
+  overview: ''
+  topics: Diffusion Models - A VAE Perspective II
+  lecture_num: 23
+  content: Diffusion Models - A VAE Perspective II
+- type: lecture
+  date: '2025-11-18T17:00:00+03:30'
+  title: Hybrid Models
+  overview: Hybrid Models
+  topics: Diffusion Models - Stable Diffusion
+  lecture_num: 24
+  content: Diffusion Models - Stable Diffusion
+- type: lecture
+  date: '2025-11-20T17:00:00+03:30'
+  title: ControlNet and Vision Language Models
+  overview: ''
+  topics: ControlNet and Vision Language Models
+  lecture_num: 25
+  content: ControlNet and Vision Language Models
+- type: lecture
+  date: '2025-11-25T17:00:00+03:30'
+  title: DDPM, DDIM, and Applications on Image Editing
+  overview: ''
+  topics: DDPM, DDIM, and Applications on Image Editing
+  lecture_num: 26
+  content: DDPM, DDIM, and Applications on Image Editing

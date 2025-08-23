@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-11-14T15:00:00+3:30
+date: 2025-11-14T17:00:00+3:30
 title: Denoising Diffusion Probabilistic Models
 thumbnail: /static_files/presentations/lec8.png
 links: 

@@ -11,8 +11,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title> Assignments - Deep Generative Models / Fall 2024 </title>
-  <meta name="description" content="Assignments - Deep Generative Models / Fall 2024">
+  <title>Deep Generative Models / Fall 2024 - University of Pennsylvania</title>
+  <meta name="description" content=" - Deep Generative Models / Fall 2024">
   
   <link rel="stylesheet" href="/dgm/_css/main.css">
   <link rel="canonical" href="http://localhost:4000/dgm/assignments/">
@@ -110,23 +110,292 @@
         <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Assignments</h1>
+    <h1 class="post-title"></h1>
   </header>
 
   <article class="post-content">
-    <p>You can download the assignments here. Also check out each assignment page for any additional info.</p>
+    <div class="assignments-container">
+    <header class="assignments-header">
+        <h1>Course Assignments</h1>
+        <p class="assignments-description"><p>You can download the assignments here. Also check out each assignment page for any additional info.</p>
+</p>
+    </header>
 
-<ul id="archive">
+    <div class="assignments-list">
+        
+        <div class="assignment-card">
+            <div class="assignment-content">
+                <div class="assignment-header">
+                    <h3 class="assignment-title">
+                        <a href="/dgm/assignments/hw_01">Homework #1: Deep Generative Models</a>
+                    </h3>
+                    <div class="assignment-date">
+                        
+                            Sep 04, 2025
+                        
+                    </div>
+                </div>
+                
+                <div class="assignment-bottom">
+                    
+                    <div class="assignment-due">
+                        <span class="due-label">Due:</span>
+                        <span class="due-date">Sep 21, 2025</span>
+                    </div>
+                    
+                    
+                    <div class="assignment-links">
+                        <a class="download-link pdf-link" title="Download problems (pdf)" href="/dgm">
+                            <span class="link-icon">📄</span>
+                            <span class="link-text">PDF</span>
+                        </a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
 
-      <li class="archiveposturl" style="background: transparent">
-        <span><a href="/dgm/assignments/hw_01">Homework #1: Deep Generative Models</a></span>
-<strong style="font-size:100%; font-family: 'Titillium Web', sans-serif; float:right">
-<a title="Download problems (pdf)" href="/dgm"><i class="fas fa-file-pdf"></i></a> 
+<style>
+.assignments-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
 
-</strong> 
-      </li>
+.assignments-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
 
-</ul>
+.assignments-header h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.75rem;
+}
+
+.assignments-description {
+    font-size: 1rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.assignments-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.assignment-card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 1.25rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.assignment-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    border-color: #cbd5e0;
+}
+
+.assignment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.assignment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.assignment-title {
+    margin: 0;
+    flex: 1;
+}
+
+.assignment-title a {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1a202c;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.assignment-title a:hover {
+    color: #3b82f6;
+}
+
+.assignment-date {
+    font-size: 0.875rem;
+    color: #64748b;
+    font-weight: 500;
+    white-space: nowrap;
+    padding: 0.25rem 0.75rem;
+    background: #f1f5f9;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+}
+
+.assignment-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.assignment-due {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 0.75rem;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 6px;
+    border-left: 3px solid #ef4444;
+}
+
+.due-label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #991b1b;
+}
+
+.due-date {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #dc2626;
+}
+
+.assignment-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    box-shadow: 0 1px 2px rgba(59, 130, 246, 0.1);
+}
+
+.download-link:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
+}
+
+.attachment-link {
+    background: #10b981;
+    box-shadow: 0 1px 2px rgba(16, 185, 129, 0.1);
+}
+
+.attachment-link:hover {
+    background: #059669;
+    box-shadow: 0 4px 8px rgba(16, 185, 129, 0.2);
+}
+
+.link-icon {
+    font-size: 0.875rem;
+}
+
+.link-text {
+    font-weight: 500;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .assignments-container {
+        padding: 1rem 0.5rem;
+    }
+    
+    .assignments-header h1 {
+        font-size: 1.75rem;
+    }
+    
+    .assignment-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+    
+    .assignment-date {
+        align-self: flex-start;
+    }
+    
+    .assignment-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+    
+    .assignment-links {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .download-link {
+        justify-content: center;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    .assignment-card {
+        background: #1a202c;
+        border-color: #2d3748;
+    }
+    
+    .assignment-title a {
+        color: #e2e8f0;
+    }
+    
+    .assignment-title a:hover {
+        color: #60a5fa;
+    }
+    
+    .assignment-date {
+        background: #2d3748;
+        color: #a0aec0;
+        border-color: #4a5568;
+    }
+    
+    .assignment-due {
+        background: #2d1b1b;
+        border-color: #4c1d1d;
+        border-left-color: #f87171;
+    }
+    
+    .due-label {
+        color: #fca5a5;
+    }
+    
+    .due-date {
+        color: #f87171;
+    }
+}
+</style>
   </article>
 
 </div>

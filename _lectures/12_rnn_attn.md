@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2024-10-24T15:00:00+3:30
+date: 2025-10-24T17:00:00+3:30
 title: Recurrent Neural Networks and Attention Mechanisms
 thumbnail: /static_files/presentations/lec8.png
 links: 

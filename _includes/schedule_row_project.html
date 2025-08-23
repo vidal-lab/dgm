@@ -1,0 +1,15 @@
+<div class="col col-1" data-label="Event">
+    <span class="event-badge">Project</span>
+</div>
+<div class="col col-1-2" data-label="Date">
+    {{ include.event.date | date: site.dateformat }}
+    <br class="date-spliter"/>{{ include.event.date | date: "%A" }}
+</div>
+<div class="col col-2" data-label="Title">
+    {{ include.event.title }}
+</div>
+<div class="col col-4" data-label="Topics">
+    {% if include.event.content %}
+    {{ include.event.content }}
+    {% endif %}
+</div>
