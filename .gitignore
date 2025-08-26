@@ -33,6 +33,7 @@ logs/
 *.temp
 .tmp/
 _old_lectures/
+static_files/pptx/
 
 # Environment variables
 .env

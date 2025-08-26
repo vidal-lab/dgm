@@ -5,9 +5,9 @@ title: Introduction and Background
 tldr: "Introduction to Deep Generative Models, History, and Applications"
 thumbnail: /static_files/presentations/lec1.png
 links: 
-    - url: /static_files/lectures/dgm25-lec1-syllabus.pdf
+    - url: /static_files/lectures/dgm25-lec00-syllabus.pdf
       name: syllabus
-    - url: /static_files/lectures/dgm25-lec1-intro.pdf
+    - url: /static_files/lectures/dgm25-lec01-intro.pdf
       name: slides
     - url: #
       name: recording
