@@ -9,7 +9,7 @@ links:
       name: syllabus
     - url: /static_files/lectures/dgm25-lec01-intro.pdf
       name: slides
-    - url: #
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1fbe6ef1-fc43-4b11-a5ad-b34100cd4cc6
       name: recording
 ---
 **Suggested Readings:**
