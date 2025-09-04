@@ -10,8 +10,8 @@ links:
     - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0a32c0ee-12a0-46d8-89ab-b34100cd4d2e
       name: recording
 ---
-**Suggested Readings:**
-- Basics of Probability and Statistics
+**Suggested Readings (Appendix A and B, GPCA Book):**
+- Basics of Probability and Statistics 
 - Basics of Information Theory
 - Discriminative vs. Generative Models
 - Basics of Maximum Likelihood Estimation

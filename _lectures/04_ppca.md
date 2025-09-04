@@ -10,6 +10,6 @@ links:
     - url: #
       name: recording
 ---
-**Suggested Readings:**
+**Suggested Readings (Section 2.2, GPCA Book):**
 - Probabilistic Principal Component Analysis (PPCA)
 - Application of PPCA to Generating Images of Faces

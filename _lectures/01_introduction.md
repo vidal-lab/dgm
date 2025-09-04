@@ -12,7 +12,7 @@ links:
     - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1fbe6ef1-fc43-4b11-a5ad-b34100cd4cc6
       name: recording
 ---
-**Suggested Readings:**
+**Suggested Readings (Intro Chapter, DGM Book):**
 - History of AI
 - History of Generative Models
 - Advent of Deep Generative Models
