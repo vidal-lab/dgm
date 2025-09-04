@@ -7,7 +7,7 @@ thumbnail: /static_files/presentations/lec3.png
 links: 
     - url: /static_files/lectures/dgm25-lec03-4-ppca.pdf
       name: slides
-    - url: #
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5e60df00-bccb-41ab-bf92-b34100cd4d46
       name: recording
 ---
 **Suggested Readings:**
