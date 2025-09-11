@@ -65,9 +65,9 @@
   date: '2025-09-25T17:00:00+03:30'
   title: Recitation
   overview: Recitation
-  topics: Review HW1. Hands-on first with programming, analytical
+  topics: Hands-on VAE
   lecture_num: 10
-  content: Review HW1. Hands-on first with programming, analytical
+  content: Hands-on VAE
 - type: lecture
   date: '2025-09-30T17:00:00+03:30'
   title: Shallow Auto-regressive Models
