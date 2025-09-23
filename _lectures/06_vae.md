@@ -7,7 +7,7 @@ thumbnail: /static_files/presentations/lec.png
 links: 
     - url: /static_files/lectures/dgm25-lec06-7-vae.pdf
       name: slides
-    - url: #
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=97b0756c-9fd7-4bda-b152-b34100cd4dbc
       name: recording
 ---
 **Suggested Readings:**
