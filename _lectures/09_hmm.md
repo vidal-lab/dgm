@@ -6,7 +6,7 @@ thumbnail: /static_files/presentations/lec8.png
 links: 
     - url: /static_files/lectures/dgm25-lec09-hmm.pdf
       name: slides
-    - url: #
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5a4e775a-d1a4-4739-b786-b34100cd4e01
       name: recording
 ---
 **Suggested Readings:**
