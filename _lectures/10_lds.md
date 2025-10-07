@@ -1,6 +1,6 @@
 ---
 type: lecture
-date: 2025-10-10T17:00:00+3:30
+date: 2025-10-02T17:00:00+3:30
 title: Linear Dynamical Systems 
 thumbnail: /static_files/presentations/lec8.png
 links: 
