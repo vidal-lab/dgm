@@ -35,6 +35,8 @@ logs/
 _old_lectures/
 static_files/pptx/
 scripts/
+static_files/assignments/
+notebooks/
 
 # Environment variables
 .env
