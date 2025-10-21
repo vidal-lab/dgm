@@ -6,7 +6,7 @@ thumbnail: /static_files/presentations/lec8.png
 links: 
     - url: /static_files/lectures/dgm25-lec15-diffusion_vae_perspective.pdf
       name: slides
-    - url: #
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=84bd6813-8add-4d03-836e-b34100cd4ef7
       name: recording 
 ---
 **Suggested Readings:**
