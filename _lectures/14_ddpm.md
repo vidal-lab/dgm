@@ -6,8 +6,8 @@ thumbnail: /static_files/presentations/lec8.png
 links: 
     - url: /static_files/lectures/dgm25-lec15-diffusion_vae_perspective.pdf
       name: slides
-    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=84bd6813-8add-4d03-836e-b34100cd4ef7
-      name: recording 
+    - ulr: https://upenn.zoom.us/rec/share/H_3_jVuo-6gifvVPEq0Nhu4etPcqmJXJu5L56IjIGvmJjRWIO-pvxklNEU7N4NkP.czFTEWQOmfDRrxA8?startTime=1761075043000
+      name: recording
 ---
 **Suggested Readings:**
 - Introduction to Denoising Diffusion Probabilistic Models
