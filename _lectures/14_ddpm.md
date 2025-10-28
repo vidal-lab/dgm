@@ -1,7 +1,7 @@
 ---
 type: lecture
-date: 2025-11-14T17:00:00+3:30
-title: Denoising Diffusion Probabilistic Models
+date: 2025-10-21T17:00:00+3:30
+title: Denoising Diffusion Probabilistic Models - VAE Perspective
 thumbnail: /static_files/presentations/lec8.png
 links: 
     - url: /static_files/lectures/dgm25-lec15-diffusion_vae_perspective.pdf
