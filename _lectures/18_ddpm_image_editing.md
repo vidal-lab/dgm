@@ -1,14 +1,14 @@
 ---
 type: lecture
-date: 2025-10-28T17:00:00+3:30
-title: Denoising Diffusion Probabilistic Models - SDE Perspective
+date: 2025-11-04T17:00:00+3:30
+title: Image Editing with Diffusion Models
 thumbnail: /static_files/presentations/lec8.png
 links: 
-    - url: /static_files/lectures/dgm25-lec19-diffusion_sde_perspective.pdf
+    - url: /static_files/lectures/dgm25-lec19-image-editing.pdf
       name: slides
     - ulr: #
       name: recording
 ---
 **Suggested Readings:**
 - Introduction to Denoising Diffusion Probabilistic Models
-- Stochastic Differential Equation
+- Denoising Score Matching
