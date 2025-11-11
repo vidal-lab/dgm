@@ -6,7 +6,7 @@ thumbnail: /static_files/presentations/lec8.png
 links: 
     - url: /static_files/lectures/dgm25-lec20-score-matching.pdf
       name: slides
-    - ulr: #
+    - ulr: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5128a2c9-d846-4318-9150-b34100cd4f5c
       name: recording
 ---
 **Suggested Readings:**
