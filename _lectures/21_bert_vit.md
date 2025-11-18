@@ -8,7 +8,7 @@ links:
       name: BERT slides
     - url: /static_files/lectures/dgm25-lec23-transformers_for_vision.pdf
       name: ViT slides
-    - url:
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=91ce9b75-55d8-448c-8f8d-b34100cd4fad
       name: recording
 ---
 **Suggested Readings:**

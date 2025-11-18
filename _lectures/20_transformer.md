@@ -6,7 +6,7 @@ thumbnail: /static_files/presentations/lec8.png
 links: 
     - url: /static_files/lectures/dgm25-lec21-transformers.pdf
       name: slides
-    - url: #
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=78414963-bca3-421e-8bf8-b34100cd4f95
       name: recording
 ---
 **Suggested Readings:**
