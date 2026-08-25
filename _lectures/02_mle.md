@@ -5,10 +5,10 @@ title: Maximum Likelihood Estimation
 tldr: "Basics of Probability and Statistics, Information Theory, Maximum Likelihood Estimation"
 thumbnail: /static_files/presentations/lec2.png
 links: 
-    - url: /lectures/
-      name: slides
-    - url: /lectures/
-      name: recording
+    - name: slides
+      disabled: true
+    - name: recording
+      disabled: true
 ---
 **Suggested Readings (Appendix A and B, GPCA Book):**
 - Basics of Probability and Statistics 

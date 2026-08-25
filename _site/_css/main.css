@@ -188,6 +188,8 @@ a.tosu { color: #b00000; background: #f5f5f5; text-decoration: none; padding: 2p
 
 .schedule-lecture-links { font-weight: normal; font-family: inherit; }
 
+.link-disabled { color: #9ca3af; cursor: default; }
+
 .markdown-content p, .markdown-content ol { margin-bottom: 3px; }
 .markdown-content li { padding: 0px; display: list-item !important; border-bottom: 0 !important; }
 

@@ -1,11 +1,15 @@
 
     {% if include.lecture.links %}
     {% for link in include.lecture.links %}
+    {% if link.disabled %}
+    [<span class="link-disabled" title="Not available yet">{{ link.name }}</span>]
+    {% else %}
     [<a title="Download {{ link.name }}" href="
     {% if link.url contains '://' %}
-      {{ link.url }} 
+      {{ link.url }}
     {% else %}
-      {{ link.url | prepend: site.baseurl }} 
+      {{ link.url | prepend: site.baseurl }}
     {% endif %}">{{ link.name }}</a>]
+    {% endif %}
     {% endfor %}
     {% endif %}

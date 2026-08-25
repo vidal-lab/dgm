@@ -1,13 +1,13 @@
 ---
 type: lecture
-date: 2025-11-11T17:00:00+3:30
+date: 2026-11-10T17:00:00+3:30
 title: Transformers
 thumbnail: /static_files/presentations/lec8.png
 links: 
-    - url: /static_files/lectures/dgm25-lec21-transformers.pdf
-      name: slides
-    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=78414963-bca3-421e-8bf8-b34100cd4f95
-      name: recording
+    - name: slides
+      disabled: true
+    - name: recording
+      disabled: true
 ---
 **Suggested Readings:**
 - Introduction the Self-Attention mechanism

@@ -500,6 +500,11 @@ a.tosu {
     font-family: inherit;
   }
 
+  .link-disabled {
+    color: #9ca3af;
+    cursor: default;
+  }
+
 .markdown-content {
     p,ol {
         margin-bottom: 3px;

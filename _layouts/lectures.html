@@ -33,6 +33,12 @@ layout: page
                     {% include lecture_links.html lecture=lecture %}
                 </div>
 
+                {% if lecture.recording_passcode %}
+                <div class="recording-passcode">
+                    Recording passcode: <span class="passcode-badge">{{ lecture.recording_passcode }}</span>
+                </div>
+                {% endif %}
+
                 {% if lecture.content != '' %}
                 <div class="lecture-details">
                     {{ lecture.content }}
@@ -176,6 +182,33 @@ layout: page
     background: #2563eb;
     transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(59, 130, 246, 0.2);
+}
+
+.lecture-links .link-disabled {
+    display: inline-block;
+    padding: 0.625rem 1.125rem;
+    margin: 0.25rem 0.5rem 0.25rem 0;
+    background: #e2e8f0;
+    color: #94a3b8;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: default;
+}
+
+.recording-passcode {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #475569;
+}
+
+.passcode-badge {
+    font-weight: 700;
+    font-size: 1.05em;
+    background: #fff3cd;
+    color: #856404;
+    padding: 2px 8px;
+    border-radius: 4px;
 }
 
 .lecture-details {

@@ -1,13 +1,13 @@
 ---
 type: lecture
-date: 2025-10-14T17:00:00+3:30
+date: 2026-10-13T17:00:00+3:30
 title: Recurrent Neural Networks and Attention Mechanisms
 thumbnail: /static_files/presentations/lec8.png
 links: 
-    - url: /static_files/lectures/dgm25-lec13-rnn_attention.pdf
-      name: slides
-    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d059f309-a404-47af-8c48-b34100cd4eca
-      name: recording
+    - name: slides
+      disabled: true
+    - name: recording
+      disabled: true
 ---
 **Suggested Readings:**
 - Introduction the RNN architecture

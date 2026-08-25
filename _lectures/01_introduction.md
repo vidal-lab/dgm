@@ -9,8 +9,9 @@ links:
       name: syllabus
     - url: /static_files/lectures/dgm26-lec01-intro.pdf
       name: slides
-    - url: /lectures/
+    - url: https://upenn.zoom.us/rec/share/rEdwrWNIk13b0rqtwgywwUk_I0LbsBxALFLx34KxdA0I3-hl9Y6-zGKSrWQIRG_X.Yx_kEkC_iyXOwaUC
       name: recording
+recording_passcode: R7A$LiBR
 ---
 **Suggested Readings (Intro Chapter, DGM Book):**
 - History of AI

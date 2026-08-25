@@ -1,13 +1,13 @@
 ---
 type: lecture
-date: 2025-10-02T17:00:00+3:30
+date: 2026-10-01T17:00:00+3:30
 title: Linear Dynamical Systems 
 thumbnail: /static_files/presentations/lec8.png
 links: 
-    - url: /static_files/lectures/dgm25-lec10-lds.pdf
-      name: slides
-    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=728032a8-f3a9-49e9-a937-b34100cd4e6b
-      name: recording
+    - name: slides
+      disabled: true
+    - name: recording
+      disabled: true
 ---
 **Suggested Readings:**
 - Introduction to Linear Dynamical Systems.

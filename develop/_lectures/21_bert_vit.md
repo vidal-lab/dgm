@@ -1,15 +1,15 @@
 ---
 type: lecture
-date: 2025-11-13T17:00:00+3:30
+date: 2026-11-12T17:00:00+3:30
 title: Transformers for NLP and Vision
 thumbnail: /static_files/presentations/lec8.png
 links: 
-    - url: /static_files/lectures/dgm25-lec22-transformers_for_language.pdf
-      name: BERT slides
-    - url: /static_files/lectures/dgm25-lec23-transformers_for_vision.pdf
-      name: ViT slides
-    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=91ce9b75-55d8-448c-8f8d-b34100cd4fad
-      name: recording
+    - name: BERT slides
+      disabled: true
+    - name: ViT slides
+      disabled: true
+    - name: recording
+      disabled: true
 ---
 **Suggested Readings:**
 - BERT (https://arxiv.org/abs/1810.04805)
