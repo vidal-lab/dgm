@@ -138,6 +138,16 @@ The site will be available at `http://localhost:4000`.
   - Added `faraday` (`~> 2.7`) and `faraday-net_http` to the `Gemfile` — the resolved `faraday 2.0.0` shipped without a usable default HTTP adapter, which broke `jekyll-github-metadata`/`jekyll-feed` locally.
 - Archived the Fall 2025 offering as a standalone site at [vidal-lab.github.io/dgm-25](https://vidal-lab.github.io/dgm-25) (repo: `dgm-25`, `baseurl: /dgm-25`), and added it to `_data/previous_offering.yml`.
 - Rolled this repo forward to **Fall 2026** (`course_semester` in `_config.yml`, and the README description); content updates (lectures, schedule, assignments) for the new semester are being made manually.
+- Updated the teaching team in `_data/people.yml`: Uday Kiran Reddy Tadipatri (webpage now LinkedIn), Yuyan Ge, Buyun Liang, Nghia Nguyen, and Leandro Palma; removed prior TAs no longer on the course. Added their photos to `_images/pp/`.
+- Homepage: removed the auto-generated "Updates" box's stale Fall 2025 content; the box now always renders (heading kept) but stays empty via a `show_updates` toggle in `_includes/announcements.html` until real Fall 2026 updates are ready. Updated the Canvas link in `index.md` to the new course (`1937189`).
+- Schedule page (`_layouts/schedule.html`):
+  - Hid Assignment/Due/Project rows from the table for now (only Lecture rows show); re-add `site.data.events`/`projects`/`assignments` to the concat to bring them back.
+  - Updated Location to AGH 203 and added Semester Dates (8/25/2026 - 12/3/2026).
+  - Replaced the stale per-TA office-hours rotation with updated Fall 2026 assignments (Prof. Vidal: Thu 5-5:45pm, AGH 609, starting 09/04; Yuyan & Leandro Fridays / Buyun & Nghia Tuesdays, AGH 615) and a contact note for extra office hours.
+  - Added a gray "Fall Break" row (`_includes/schedule_row_break.html`, `.table-row-break` style) noting no classes Oct 1-4, and shifted all subsequent lecture dates one class later to account for it.
+- Lectures: trimmed `_lectures/` and `_data/lectures.yml` down to just the first two sessions (Introduction, Background/MLE) for now, dated to the actual Fall 2026 Tue/Thu calendar; the remaining Fall 2025 lecture files and the original full schedule data are preserved (not deleted) under `develop/_lectures/` and `develop/lectures_fall2025_full.yml` for reuse later in the semester. Lecture 1's syllabus/slides now point at new `dgm26-*` PDFs; placeholder slide/recording links (where no Fall 2026 material exists yet) point at `/lectures/`.
+- Assignments page: parked `hw_01.md`/`hw_02.md` under `develop/_assignments/` (not deleted) and set `assignments.md` to show "TBA" until new assignments are posted.
+- Added a favicon (`_images/favicon.png`, cropped tightly to the Penn logo's content and padded to a square so it isn't stretched) via `_includes/head.html`.
 
 ---
 
