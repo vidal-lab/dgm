@@ -1,5 +1,11 @@
-{% assign all_events = site.events | concat: site.lectures %}
-{% assign all_events = all_events | concat: site.assignments %}
+{% comment %} Flip to true once Fall 2026 updates should start appearing here. {% endcomment %}
+{% assign show_updates = false %}
+
+{% assign all_events = "" | split: "" %}
+{% if show_updates %}
+    {% assign all_events = site.events | concat: site.lectures %}
+    {% assign all_events = all_events | concat: site.assignments %}
+{% endif %}
 
 {% assign events_to_show = "" | split: "" %}
 {% assign current_date = 'now' | date: "%Y-%m-%d" %}
@@ -14,10 +20,13 @@
     {% endunless %}
 {% endfor %}
 
-{% assign all_events = events_to_show | concat: site.announcements %}
+{% if show_updates %}
+    {% assign all_events = events_to_show | concat: site.announcements %}
+{% else %}
+    {% assign all_events = events_to_show %}
+{% endif %}
 {% assign all_events_sorted = all_events | sort: 'date' | reverse %}
 
-{% if all_events_sorted.size > 0 %}
 <div class="announcement-box" style="margin-top:30px">
 <h2>Updates</h2>
 <ul>
@@ -38,5 +47,4 @@
     </li>
     {% endfor %}
 </ul>
-{% endif %}
 </div>

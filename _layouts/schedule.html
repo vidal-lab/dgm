@@ -10,19 +10,24 @@ layout: default
                 <strong>Class Time:</strong> Tuesdays and Thursdays, 3:30 PM - 4:59 PM
             </div>
             <div class="info-item">
-                <strong>Location:</strong> AGH 105
+                <strong>Location:</strong> AGH 203
             </div>
             <div class="info-item">
-                <strong>Office Hours:</strong> Professor René Vidal: Thursday 5pm-5:45pm, AGH 615
+                <strong>Semester Dates:</strong> 8/25/2026 - 12/3/2026
             </div>
             <div class="info-item">
-                <strong>TAs will rotate office hours every three weeks @ AGH 615. </strong> <br>
+                <strong>Office Hours:</strong> Professor René Vidal: Thursday 5pm-5:45pm, AGH 609, starting 09/04
+            </div>
+            <div class="info-item">
+                <strong>TAs will rotate office hours every two weeks @ AGH 615.</strong> <br>
                     <ul style="text-align: left;">
-                        <li>Tianjiao and Uday: Wed 12-1pm. 09/03, 09/24, 10/15, 11/05</li>
-                        <li>Liangzu and Kostas: Mon 2-3pm. 09/08, 09/29, 10/20, 11/10</li>
-                        <li>Kaleab and Yuyan: Fri 9-10am. 09/19, 10/10, 10/31, 11/21</li>
+                        <li>Yuyan & Leandro: Friday 9am-10am. 08/28, 09/11, 09/25, 10/09, 10/23, 11/06, 11/20, 12/04</li>
+                        <li>Buyun & Nghia: Tuesday 3:30pm-4:30pm. 09/01, 09/15, 09/29, 10/13, 10/27, 11/10, 11/24, 12/08</li>
                     </ul>
-                    <strong>TAs will hold extra office hours on the week that homework is due.</strong>
+                    <strong>TAs will hold extra office hours on the week that assignments are due.</strong>
+            </div>
+            <div class="info-item">
+                For extra OHs with René, feel free to email Sonia Castro Rodríguez <a href="mailto:soniacr@engineering.upenn.edu">soniacr@engineering.upenn.edu</a>
             </div>
         </div>
     </header>
@@ -37,9 +42,8 @@ layout: default
             <div class="col col-4">Topics</div>
         </div>
         
-        {% assign all_events = site.data.events | concat: site.data.lectures %}
-        {% assign all_events = all_events | concat: site.data.projects %}
-        {% assign all_events = all_events | concat: site.data.assignments %}
+        {% comment %} Assignment/due and project rows are hidden for now; re-add site.data.events, site.data.projects, site.data.assignments to the concat below to bring them back. {% endcomment %}
+        {% assign all_events = site.data.lectures %}
         {% assign all_events_sorted = all_events | sort: 'date' %}
 
         {% for event in all_events_sorted %}
@@ -141,6 +145,13 @@ layout: default
 .table-row-grades {
     border-left: 3px solid #6f42c1;
     background: #f8f5ff;
+}
+
+.table-row-break {
+    border-left: 3px solid #9ca3af;
+    background: #f3f4f6;
+    color: #6b7280;
+    font-style: italic;
 }
 
 .col {

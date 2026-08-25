@@ -2,4 +2,4 @@
 layout: assignments
 permalink: /assignments/
 ---
-You can download the assignments here. Also check out each assignment page for any additional info.
+TBA — assignments for this semester have not been posted yet.

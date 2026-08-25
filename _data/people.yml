@@ -4,26 +4,22 @@ instructors:
     webpage: https://www.grasp.upenn.edu/people/rene-vidal/
 
 teaching_assistants:
-  - name: Tianjiao Ding
-    profile_pic: /_images/pp/tianjiao_ding.jpg
-    webpage: https://tianjiaoding.com/
-
-  - name: Liangzu Peng
-    profile_pic: /_images/pp/liangzu_peng.jpg
-    webpage: https://www.grasp.upenn.edu/people/liangzu-peng/
-
-  - name: Kaleab A. Kinfu
-    profile_pic: /_images/pp/kaleab_kinfu.jpg
-    webpage: https://kaleab.me/
+  - name: Uday Kiran Reddy Tadipatri
+    profile_pic: /_images/pp/uday_kiran_reddy.jpeg
+    webpage: https://www.linkedin.com/in/tadipatri-uday-kiran-reddy/
 
   - name: Yuyan Ge
     profile_pic: /_images/pp/yuyan_ge.jpeg
     webpage: https://www.grasp.upenn.edu/people/yuyan-ge/
 
-  - name: Tadipat Uday Kiran Reddy
-    profile_pic: /_images/pp/uday_kiran_reddy.jpeg
-    webpage: https://tudaykiranreddy.github.io/
+  - name: Buyun Liang
+    profile_pic: /_images/pp/buyun_liang.jpg
+    webpage: https://buyunliang.org/
 
-  - name: Kostas Emmanouilidis
-    profile_pic: /_images/pp/kostas_emmanouilidis.jpg
-    webpage: https://emmanouilidisk.github.io/
+  - name: Nghia Nguyen
+    profile_pic: /_images/pp/nghia_nguyen.png
+    webpage: https://nghiahhnguyen.github.io/
+
+  - name: Leandro Palma
+    profile_pic: /_images/pp/leandro_palma.jpg
+    webpage: https://www.grasp.upenn.edu/people/leandro-palma/
