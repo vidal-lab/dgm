@@ -1,1 +1,1 @@
-Deep Generative Course at UPenn
+Deep Generative Course at UPenn 
