@@ -7,8 +7,8 @@ thumbnail: /static_files/presentations/lec2.png
 links: 
     - url: /static_files/lectures/dgm26-lec02-background.pdf
       name: slides
-    - name: recording
-      disabled: true
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=40d5abe3-449d-4e86-80d8-b4b3014e9a9a
+      name: recording
 ---
 **Suggested Readings (Appendix A and B, GPCA Book):**
 - Basics of Probability and Statistics 
