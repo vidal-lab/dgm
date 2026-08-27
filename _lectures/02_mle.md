@@ -5,8 +5,8 @@ title: Maximum Likelihood Estimation
 tldr: "Basics of Probability and Statistics, Information Theory, Maximum Likelihood Estimation"
 thumbnail: /static_files/presentations/lec2.png
 links: 
-    - name: slides
-      disabled: true
+    - url: /static_files/lectures/dgm26-lec02-background.pdf
+      name: slides
     - name: recording
       disabled: true
 ---
