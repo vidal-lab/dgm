@@ -5,8 +5,8 @@ title: Classes of Generative Models
 tldr: "Gaussian Parameter Estimation, Latent Variable Models"
 thumbnail: /static_files/presentations/lec3.png
 links: 
-    - name: slides
-      disabled: true
+    - url: /static_files/lectures/dgm26-lec03-04-ppca.pdf
+      name: slides
     - name: recording
       disabled: true
 ---
