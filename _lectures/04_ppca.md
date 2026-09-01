@@ -5,8 +5,8 @@ title: Probabilistic Principal Component Analysis
 tldr: "Probabilistic Principal Component Analysis (PPCA)"
 thumbnail: /static_files/presentations/lec4.png
 links: 
-    - name: slides
-      disabled: true
+    - url: /static_files/lectures/dgm26-lec03-04-ppca.pdf
+      name: slides
     - name: recording
       disabled: true
 ---
