@@ -10,6 +10,8 @@ links:
     - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=40d5abe3-449d-4e86-80d8-b4b3014e9a9a
       name: recording
 ---
+<p class="lecture-update">Update: new slides uploaded (Sep 1).</p>
+
 **Suggested Readings (Appendix A and B, GPCA Book):**
 - Basics of Probability and Statistics 
 - Basics of Information Theory
