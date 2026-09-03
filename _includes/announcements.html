@@ -1,10 +1,9 @@
 {% comment %} Flip to true once Fall 2026 updates should start appearing here. {% endcomment %}
-{% assign show_updates = false %}
+{% assign show_updates = true %}
 
 {% assign all_events = "" | split: "" %}
 {% if show_updates %}
-    {% assign all_events = site.events | concat: site.lectures %}
-    {% assign all_events = all_events | concat: site.assignments %}
+    {% assign all_events = site.events | concat: site.assignments %}
 {% endif %}
 
 {% assign events_to_show = "" | split: "" %}
@@ -20,8 +19,15 @@
     {% endunless %}
 {% endfor %}
 
+{% assign visible_announcements = "" | split: "" %}
+{% for a in site.announcements %}
+    {% unless a.hide_from_announcments %}
+        {% assign visible_announcements = visible_announcements | push: a %}
+    {% endunless %}
+{% endfor %}
+
 {% if show_updates %}
-    {% assign all_events = events_to_show | concat: site.announcements %}
+    {% assign all_events = events_to_show | concat: visible_announcements %}
 {% else %}
     {% assign all_events = events_to_show %}
 {% endif %}

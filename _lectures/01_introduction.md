@@ -12,6 +12,8 @@ links:
     - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=85c35031-a3c4-45a4-b737-b4b101565760
       name: recording
 ---
+<p class="lecture-update">Update: syllabus slides updated with new TA office hour locations (Sep 3).</p>
+
 **Suggested Readings (Intro Chapter, DGM Book):**
 - History of AI
 - History of Generative Models
