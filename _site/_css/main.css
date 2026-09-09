@@ -190,6 +190,8 @@ a.tosu { color: #b00000; background: #f5f5f5; text-decoration: none; padding: 2p
 
 .link-disabled { color: #9ca3af; cursor: default; }
 
+.lecture-update { color: #16a34a; font-weight: 600; }
+
 .markdown-content p, .markdown-content ol { margin-bottom: 3px; }
 .markdown-content li { padding: 0px; display: list-item !important; border-bottom: 0 !important; }
 

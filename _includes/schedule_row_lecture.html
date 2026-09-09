@@ -1,13 +1,50 @@
-<div class="col col-1" data-label="Event">Lecture</div>
+<div class="col col-1" data-label="Event">
+    {% assign lec_idx_padded = include.event.lecture_num | prepend: "0" | slice: -2, 2 %}
+    Lecture {{ lec_idx_padded }}
+</div>
 <div class="col col-1-2" data-label="Date">
     {{ include.event.date | date: site.dateformat }}
     <br class="date-spliter"/>{{ include.event.date | date: "%A" }}
 </div>
 <div class="col col-2" data-label="Title">
     {{ include.event.title }}
-    <div class="schedule-lecture-links">
-    {% include lecture_links.html lecture=include.event %}
-    </div>
+</div>
+{% assign matched_lecture = nil %}
+{% for l in site.lectures %}
+    {% if l.lecture_num == include.event.lecture_num %}
+        {% assign matched_lecture = l %}
+    {% endif %}
+{% endfor %}
+{% assign slides_url = "" %}
+{% if matched_lecture %}
+    {% for link in matched_lecture.links %}
+        {% assign link_name_downcase = link.name | downcase %}
+        {% if link_name_downcase contains "slide" %}
+            {% assign slides_url = link.url %}
+        {% endif %}
+    {% endfor %}
+{% endif %}
+{% assign slides_override = "" %}
+{% if slides_url contains "dgm26-lec02-03-04-background.pdf" and include.event.lecture_num != 2 %}
+    {% assign slides_override = "see above" %}
+{% endif %}
+{% if slides_url contains "dgm26-lec05-06-ppca.pdf" and include.event.lecture_num != 5 %}
+    {% assign slides_override = "see above" %}
+{% endif %}
+<div class="col col-slides schedule-lecture-links" data-label="Slides">
+    {% if slides_override != "" %}
+    [<span class="link-disabled" title="Same slides as the first lecture using this file">{{ slides_override }}</span>]
+    {% elsif matched_lecture %}
+    {% include lecture_links.html lecture=matched_lecture filter="slide" hide_disabled=true %}
+    {% endif %}
+    {% if include.event.lecture_num == 2 or include.event.lecture_num == 5 %}
+    <br><span class="slides-updated-note">Updated on Sep 9</span>
+    {% endif %}
+</div>
+<div class="col col-recording schedule-lecture-links" data-label="Recording">
+    {% if matched_lecture %}
+    {% include lecture_links.html lecture=matched_lecture filter="recording" hide_disabled=true %}
+    {% endif %}
 </div>
 <div class="col col-4 markdown-content" data-label="Topics">
     <!-- {% if include.event.suggested_readings %}

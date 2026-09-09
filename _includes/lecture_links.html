@@ -1,6 +1,24 @@
 
     {% if include.lecture.links %}
     {% for link in include.lecture.links %}
+    {% assign show_link = true %}
+    {% if include.filter %}
+        {% assign link_name_downcase = link.name | downcase %}
+        {% assign matches_filter = false %}
+        {% if link_name_downcase contains include.filter %}
+            {% assign matches_filter = true %}
+        {% endif %}
+        {% if include.filter == "slide" and link_name_downcase contains "syllabus" %}
+            {% assign matches_filter = true %}
+        {% endif %}
+        {% unless matches_filter %}
+            {% assign show_link = false %}
+        {% endunless %}
+    {% endif %}
+    {% if show_link and link.disabled and include.hide_disabled %}
+    {% assign show_link = false %}
+    {% endif %}
+    {% if show_link %}
     {% if link.disabled %}
     [<span class="link-disabled" title="Not available yet">{{ link.name }}</span>]
     {% else %}
@@ -10,6 +28,7 @@
     {% else %}
       {{ link.url | prepend: site.baseurl }}
     {% endif %}">{{ link.name }}</a>]
+    {% endif %}
     {% endif %}
     {% endfor %}
     {% endif %}
