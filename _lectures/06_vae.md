@@ -8,8 +8,8 @@ thumbnail: /static_files/presentations/lec.png
 links: 
     - url: /static_files/lectures/dgm26-lec05-06-ppca.pdf
       name: slides 05-06
-    - name: recording
-      disabled: true
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a13d06ae-1838-4f45-a0b1-b4c1014e6078
+      name: recording
 ---
 **Suggested Readings (Section 2.2, GPCA Book):**
 - Probabilistic Principal Component Analysis (PPCA)

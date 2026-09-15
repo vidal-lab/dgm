@@ -6,8 +6,8 @@ title: Variational Auto-Encoders (Application)
 tldr: "VAE (reparameterization trick) - application and hands-on session"
 thumbnail: /static_files/presentations/lec.png
 links: 
-    - name: slides
-      disabled: true
+    - url: /static_files/lectures/dgm26-lec07-variational-inference.pdf
+      name: slides 07
     - name: recording
       disabled: true
 ---
