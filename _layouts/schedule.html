@@ -46,8 +46,8 @@ layout: default
             <div class="col col-4">Topics</div>
         </div>
         
-        {% comment %} Assignment/due and project rows are hidden for now; re-add site.data.events, site.data.projects, site.data.assignments to the concat below to bring them back. {% endcomment %}
-        {% assign all_events = site.data.lectures %}
+        {% comment %} Project rows are hidden for now; re-add site.data.projects to the concat below to bring them back. {% endcomment %}
+        {% assign all_events = site.data.lectures | concat: site.data.assignments | concat: site.data.events | concat: site.data.quizzes %}
         {% assign all_events_sorted = all_events | sort: 'date' %}
 
         {% for event in all_events_sorted %}
@@ -169,6 +169,11 @@ layout: default
 .table-row-due {
     border-left: 3px solid #dc3545;
     background: #fff5f5;
+}
+
+.table-row-quiz {
+    border-left: 3px solid #a94442;
+    background: #fdf2f2;
 }
 
 .table-row-grades {

@@ -1,12 +1,6 @@
 - type: assignment
-  date: '2025-09-09T17:00:00+03:30'
+  date: '2026-09-16T12:00:00+03:30'
   title: Homework 1
   hw_num: '1'
   action: release
-  url: https://canvas.upenn.edu/courses/1880732/assignments/13849453
-- type: assignment
-  date: '2025-10-01T17:00:00+03:30'
-  title: Homework 2
-  hw_num: '2'
-  action: release
-  url: https://canvas.upenn.edu/courses/1880732/files/151774813
+  url: https://canvas.upenn.edu/courses/1937189/assignments/15133302
