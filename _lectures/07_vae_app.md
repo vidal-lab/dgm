@@ -8,8 +8,8 @@ thumbnail: /static_files/presentations/lec.png
 links: 
     - url: /static_files/lectures/dgm26-lec07-variational-inference.pdf
       name: slides 07
-    - name: recording
-      disabled: true
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b15e8033-3a64-4250-a349-b4c601557713
+      name: recording
 ---
 **Suggested Readings:**
 - Variational Auto-Encoders (VAEs)

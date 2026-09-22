@@ -31,6 +31,9 @@
 {% if slides_url contains "dgm26-lec05-06-ppca.pdf" and include.event.lecture_num != 5 %}
     {% assign slides_override = "see above" %}
 {% endif %}
+{% if slides_url contains "dgm26-lec08-09-vae.pdf" and include.event.lecture_num != 8 %}
+    {% assign slides_override = "see above" %}
+{% endif %}
 <div class="col col-slides schedule-lecture-links" data-label="Slides">
     {% if slides_override != "" %}
     [<span class="link-disabled" title="Same slides as the first lecture using this file">{{ slides_override }}</span>]

@@ -1,11 +1,12 @@
 ---
 type: lecture
+lecture_num: 10
 date: 2026-10-01T17:00:00+3:30
 title: Linear Dynamical Systems 
 thumbnail: /static_files/presentations/lec8.png
 links: 
-    - name: slides
-      disabled: true
+    - url: /static_files/lectures/dgm26-lec10-mm.pdf
+      name: slides 10
     - name: recording
       disabled: true
 ---
