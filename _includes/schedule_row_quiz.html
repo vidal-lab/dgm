@@ -10,8 +10,5 @@
     <br><span style="font-weight: normal;">{{ include.event.location }}</span>
     {% endif %}
 </div>
-<div class="col col-slides"></div>
+<div class="col col-slides markdown-content" data-label="Slides">{{ include.event.content }}</div>
 <div class="col col-recording"></div>
-<div class="col col-4 markdown-content" data-label="Topics">
-    {{ include.event.content }}
-</div>

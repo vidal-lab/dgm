@@ -43,7 +43,6 @@ layout: default
             <div class="col col-2">Title</div>
             <div class="col col-slides">Slides</div>
             <div class="col col-recording">Recording</div>
-            <div class="col col-4">Topics</div>
         </div>
         
         {% comment %} Project rows are hidden for now; re-add site.data.projects to the concat below to bring them back. {% endcomment %}
@@ -202,19 +201,12 @@ layout: default
 }
 
 .col-2 {
-    flex: 0 0 18%;
+    flex: 1 1 auto;
 }
 
 .col-slides,
 .col-recording {
     flex: 0 0 11%;
-}
-
-.col-4 {
-    flex: 1 1 auto;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    hyphens: auto;
 }
 
 .event-badge {
@@ -263,11 +255,6 @@ layout: default
 }
 
 .markdown-content {
-    line-height: 1.4;
-    font-size: 0.9rem;
-}
-
-.col-4 {
     line-height: 1.4;
     font-size: 0.9rem;
 }

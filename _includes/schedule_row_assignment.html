@@ -6,11 +6,10 @@
 <div class="col col-2" style="font-weight: bold" data-label="Title">
     {{ include.event.title }} released!
 </div>
-<div class="col col-slides"></div>
-<div class="col col-recording"></div>
-<div class="col col-4" data-label="Topics">
+<div class="col col-slides" data-label="Slides">
     [<a href="{{ include.event.url }}">{{ include.event.title }}</a>]
     {% if include.event.solutions %}
     [<a href="{{ include.event.solutions | prepend: site.baseurl}}">Solutions</a>]
     {% endif %}
 </div>
+<div class="col col-recording"></div>

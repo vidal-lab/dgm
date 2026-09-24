@@ -1,186 +1,190 @@
 - type: lecture
-  date: '2026-08-25T17:00:00+03:30'
+  date: '2026-09-01T17:00:00+03:30'
   title: Introduction
   overview: Introduction
   topics: Introduction
   lecture_num: 1
   content: Introduction
 - type: lecture
-  date: '2026-08-27T17:00:00+03:30'
+  date: '2026-09-03T17:00:00+03:30'
   title: Background
   overview: Background
-  topics: Probability, Statistics, MLE, SGD, Learning
+  topics: Background
   lecture_num: 2
-  content: Probability, Statistics, MLE, SGD, Learning
-- type: lecture
-  date: '2026-09-01T17:00:00+03:30'
-  title: Latent Variable Models
-  overview: Latent Variable Models
-  topics: Gaussian Models, PPCA
-  lecture_num: 3
-  content: Gaussian Models, PPCA
-- type: lecture
-  date: '2026-09-03T17:00:00+03:30'
-  title: Latent Variable Models
-  overview: Latent Variable Models
-  topics: PPCA
-  lecture_num: 4
-  content: PPCA
+  content: Background
 - type: lecture
   date: '2026-09-08T17:00:00+03:30'
-  title: Latent Variable Models
-  overview: Latent Variable Models
-  topics: Variational Inference
-  lecture_num: 5
-  content: Variational Inference
+  title: Background
+  overview: Background
+  topics: Background
+  lecture_num: 3
+  content: Background
 - type: lecture
   date: '2026-09-10T17:00:00+03:30'
-  title: Latent Variable Models
-  overview: Latent Variable Models
-  topics: EM, EM for GMMs, VAE (definition)
-  lecture_num: 6
-  content: EM, EM for GMMs, VAE (definition)
+  title: Background
+  overview: Background
+  topics: Background
+  lecture_num: 4
+  content: Background
 - type: lecture
   date: '2026-09-15T17:00:00+03:30'
-  title: Latent Variable Models
-  overview: Latent Variable Models
-  topics: VAE (reparameterization trick) - application + hands on session
-  lecture_num: 7
-  content: VAE (reparameterization trick) - application + hands on session
+  title: Probabilistic PCA
+  overview: Probabilistic PCA
+  topics: Probabilistic PCA
+  lecture_num: 5
+  content: Probabilistic PCA
 - type: lecture
   date: '2026-09-17T17:00:00+03:30'
-  title: Shallow Auto-regressive Models
-  overview: Shallow Auto-regressive Models
-  topics: Markov Models
-  lecture_num: 8
-  content: Markov Models
+  title: Probabilistic PCA
+  overview: Probabilistic PCA
+  topics: Probabilistic PCA
+  lecture_num: 6
+  content: Probabilistic PCA
 - type: lecture
   date: '2026-09-22T17:00:00+03:30'
-  title: Shallow Auto-regressive Models
-  overview: Shallow Auto-regressive Models
-  topics: HMMs (Inference and Decoding)
-  lecture_num: 9
-  content: HMMs (Inference and Decoding)
+  title: Variational Inference and Expectation Maximization
+  overview: Variational Inference and Expectation Maximization
+  topics: Variational Inference and Expectation Maximization
+  lecture_num: 7
+  content: Variational Inference and Expectation Maximization
 - type: lecture
   date: '2026-09-24T17:00:00+03:30'
-  title: Recitation
-  overview: Recitation
-  topics: Hands-on VAE
-  lecture_num: 10
-  content: Hands-on VAE
+  title: Variational Auto Encoders
+  overview: Variational Auto Encoders
+  topics: Variational Auto Encoders
+  lecture_num: 8
+  content: Variational Auto Encoders
 - type: lecture
   date: '2026-09-29T17:00:00+03:30'
-  title: Shallow Auto-regressive Models
-  overview: Shallow Auto-regressive Models
-  topics: HMMs (Learning, Examples)
-  lecture_num: 11
-  content: HMMs (Learning, Examples)
+  title: Variational Auto Encoders
+  overview: Variational Auto Encoders
+  topics: Variational Auto Encoders
+  lecture_num: 9
+  content: Variational Auto Encoders
 - type: break
   date: '2026-10-01T17:00:00+03:30'
   title: Fall Break
   content: No classes (Oct 1 - Oct 4)
 - type: lecture
   date: '2026-10-06T17:00:00+03:30'
-  title: Shallow Auto-regressive Models
-  overview: Shallow Auto-regressive Models
-  topics: Linear Dynamical systems (Model, Inference)
-  lecture_num: 12
-  content: Linear Dynamical systems (Model, Inference)
+  title: Markov Models
+  overview: Markov Models
+  topics: Markov Models
+  lecture_num: 10
+  content: Markov Models
 - type: lecture
   date: '2026-10-08T17:00:00+03:30'
-  title: Shallow Auto-regressive Models
-  overview: Shallow Auto-regressive Models
-  topics: Linear Dynamical systems (Learning)
-  lecture_num: 13
-  content: Linear Dynamical systems (Learning)
+  title: RNN - Architecture
+  overview: RNN - Architecture
+  topics: RNN - Architecture
+  lecture_num: 11
+  content: RNN - Architecture
 - type: lecture
   date: '2026-10-13T17:00:00+03:30'
-  title: Shallow Auto-regressive Models
-  overview: Shallow Auto-regressive Models
-  topics: Linear Dynamical systems (Application)
-  lecture_num: 14
-  content: Linear Dynamical systems (Application)
+  title: RNN - Attention and Seq2Seq Models
+  overview: RNN - Attention and Seq2Seq Models
+  topics: RNN - Attention and Seq2Seq Models
+  lecture_num: 12
+  content: RNN - Attention and Seq2Seq Models
 - type: lecture
   date: '2026-10-15T17:00:00+03:30'
-  title: Deep Auto-regressive Models
-  overview: Deep Auto-regressive Models
-  topics: RNNs - architecture
-  lecture_num: 15
-  content: RNNs - architecture
+  title: MAMBA
+  overview: MAMBA
+  topics: MAMBA
+  lecture_num: 13
+  content: MAMBA
 - type: lecture
   date: '2026-10-20T17:00:00+03:30'
-  title: Deep Auto-regressive Models
-  overview: Deep Auto-regressive Models
-  topics: RNNS -  training, vanishing gradients, application
-  lecture_num: 16
-  content: RNNS -  training, vanishing gradients, application
+  title: Diffusion Models - MHVAE
+  overview: Diffusion Models - MHVAE
+  topics: Diffusion Models - MHVAE
+  lecture_num: 14
+  content: Diffusion Models - MHVAE
 - type: lecture
   date: '2026-10-22T17:00:00+03:30'
-  title: Deep Auto-regressive Models
-  overview: Deep Auto-regressive Models
-  topics: RNNs - seq2seq and attention
-  lecture_num: 17
-  content: RNNs - seq2seq and attention
+  title: Diffusion Models - MHVAE
+  overview: Diffusion Models - MHVAE
+  topics: Diffusion Models - MHVAE
+  lecture_num: 15
+  content: Diffusion Models - MHVAE
 - type: lecture
   date: '2026-10-27T17:00:00+03:30'
-  title: Deep Auto-regressive Models
-  overview: Deep Auto-regressive Models
-  topics: Transformers - Attention is all you need
-  lecture_num: 18
-  content: Transformers - Attention is all you need
+  title: Diffusion Models - Implementation
+  overview: Diffusion Models - Implementation
+  topics: Diffusion Models - Implementation
+  lecture_num: 16
+  content: Diffusion Models - Implementation
 - type: lecture
   date: '2026-10-29T17:00:00+03:30'
-  title: Deep Auto-regressive Models
-  overview: Deep Auto-regressive Models
-  topics: Transformers - BERT / ViT
-  lecture_num: 19
-  content: Transformers - BERT / ViT
+  title: Diffusion Models - DDPM + DDIM
+  overview: Diffusion Models - DDPM + DDIM
+  topics: Diffusion Models - DDPM + DDIM
+  lecture_num: 17
+  content: Diffusion Models - DDPM + DDIM
 - type: lecture
   date: '2026-11-03T17:00:00+03:30'
-  title: Deep Auto-regressive Models
-  overview: Deep Auto-regressive Models
-  topics: Transformers - Vision Applications of Transformers
-  lecture_num: 20
-  content: Transformers - Vision Applications of Transformers
+  title: Diffusion Models - Score-based Model + SDE Perspective
+  overview: Diffusion Models - Score-based Model + SDE Perspective
+  topics: Diffusion Models - Score-based Model + SDE Perspective
+  lecture_num: 18
+  content: Diffusion Models - Score-based Model + SDE Perspective
 - type: lecture
   date: '2026-11-05T17:00:00+03:30'
-  title: Transformers - DALLE + Hands-On Session
-  overview: ''
-  topics: Transformers - DALLE + Hands-On Session
-  lecture_num: 21
-  content: Transformers - DALLE + Hands-On Session
+  title: Diffusion Models - Applications
+  overview: Diffusion Models - Applications
+  topics: Diffusion Models - Applications
+  lecture_num: 19
+  content: Diffusion Models - Applications
 - type: lecture
   date: '2026-11-10T17:00:00+03:30'
-  title: Diffusion Models - A VAE Perspective
-  overview: ''
-  topics: Diffusion Models - A VAE Perspective
-  lecture_num: 22
-  content: Diffusion Models - A VAE Perspective
+  title: Transformers
+  overview: Transformers
+  topics: Transformers
+  lecture_num: 20
+  content: Transformers
 - type: lecture
   date: '2026-11-12T17:00:00+03:30'
-  title: Diffusion Models - A VAE Perspective II
-  overview: ''
-  topics: Diffusion Models - A VAE Perspective II
-  lecture_num: 23
-  content: Diffusion Models - A VAE Perspective II
+  title: 'Transformers - Applications: Text and Image'
+  overview: 'Transformers - Applications: Text and Image'
+  topics: 'Transformers - Applications: Text and Image'
+  lecture_num: 21
+  content: 'Transformers - Applications: Text and Image'
 - type: lecture
   date: '2026-11-17T17:00:00+03:30'
-  title: Hybrid Models
-  overview: Hybrid Models
-  topics: Diffusion Models - Stable Diffusion
-  lecture_num: 24
-  content: Diffusion Models - Stable Diffusion
+  title: Transformers - VLM
+  overview: Transformers - VLM
+  topics: Transformers - VLM
+  lecture_num: 22
+  content: Transformers - VLM
 - type: lecture
   date: '2026-11-19T17:00:00+03:30'
-  title: ControlNet and Vision Language Models
-  overview: ''
-  topics: ControlNet and Vision Language Models
-  lecture_num: 25
-  content: ControlNet and Vision Language Models
+  title: Transformers - VLM
+  overview: Transformers - VLM
+  topics: Transformers - VLM
+  lecture_num: 23
+  content: Transformers - VLM
 - type: lecture
   date: '2026-11-24T17:00:00+03:30'
-  title: DDPM, DDIM, and Applications on Image Editing
-  overview: ''
-  topics: DDPM, DDIM, and Applications on Image Editing
+  title: Hands on Transformer
+  overview: Hands on Transformer
+  topics: Hands on Transformer
+  lecture_num: 24
+  content: Hands on Transformer
+- type: break
+  date: '2026-11-26T17:00:00+03:30'
+  title: Thanksgiving Break
+  content: No classes (Thanksgiving)
+- type: lecture
+  date: '2026-12-01T17:00:00+03:30'
+  title: TBD
+  overview: TBD
+  topics: TBD
+  lecture_num: 25
+  content: TBD
+- type: lecture
+  date: '2026-12-03T17:00:00+03:30'
+  title: TBD
+  overview: TBD
+  topics: TBD
   lecture_num: 26
-  content: DDPM, DDIM, and Applications on Image Editing
+  content: TBD
