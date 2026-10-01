@@ -2,7 +2,7 @@
 type: lecture
 lecture_num: 3
 date: 2026-09-01T17:00:00+3:30
-title: Classes of Generative Models 
+title: Background
 tldr: "Gaussian Parameter Estimation, Latent Variable Models"
 thumbnail: /static_files/presentations/lec3.png
 links: 

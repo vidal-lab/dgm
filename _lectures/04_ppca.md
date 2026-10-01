@@ -2,7 +2,7 @@
 type: lecture
 lecture_num: 4
 date: 2026-09-03T17:00:00+3:30
-title: Probabilistic Principal Component Analysis 
+title: Background
 tldr: "Probabilistic Principal Component Analysis (PPCA)"
 thumbnail: /static_files/presentations/lec4.png
 links: 

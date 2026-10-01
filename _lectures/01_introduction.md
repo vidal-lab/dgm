@@ -2,7 +2,7 @@
 type: lecture
 lecture_num: 1
 date: 2026-08-25T15:30:00+3:30
-title: Introduction and Background 
+title: Introduction
 tldr: "Introduction to Deep Generative Models, History, and Applications"
 thumbnail: /static_files/presentations/lec1.png
 links: 

@@ -2,7 +2,7 @@
 type: lecture
 lecture_num: 6
 date: 2026-09-10T17:00:00+3:30
-title: Probabilistic Principal Component Analysis 
+title: Probabilistic PCA
 tldr: "Probabilistic Principal Component Analysis (PPCA)"
 thumbnail: /static_files/presentations/lec.png
 links: 

@@ -2,7 +2,7 @@
 type: lecture
 lecture_num: 2
 date: 2026-08-27T17:00:00+3:30
-title: Maximum Likelihood Estimation 
+title: Background
 tldr: "Basics of Probability and Statistics, Information Theory, Maximum Likelihood Estimation"
 thumbnail: /static_files/presentations/lec2.png
 links: 

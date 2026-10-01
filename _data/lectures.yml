@@ -1,61 +1,61 @@
 - type: lecture
-  date: '2026-09-01T17:00:00+03:30'
+  date: '2026-08-25T17:00:00+03:30'
   title: Introduction
   overview: Introduction
   topics: Introduction
   lecture_num: 1
   content: Introduction
 - type: lecture
-  date: '2026-09-03T17:00:00+03:30'
+  date: '2026-08-27T17:00:00+03:30'
   title: Background
   overview: Background
   topics: Background
   lecture_num: 2
   content: Background
 - type: lecture
-  date: '2026-09-08T17:00:00+03:30'
+  date: '2026-09-01T17:00:00+03:30'
   title: Background
   overview: Background
   topics: Background
   lecture_num: 3
   content: Background
 - type: lecture
-  date: '2026-09-10T17:00:00+03:30'
+  date: '2026-09-03T17:00:00+03:30'
   title: Background
   overview: Background
   topics: Background
   lecture_num: 4
   content: Background
 - type: lecture
-  date: '2026-09-15T17:00:00+03:30'
+  date: '2026-09-08T17:00:00+03:30'
   title: Probabilistic PCA
   overview: Probabilistic PCA
   topics: Probabilistic PCA
   lecture_num: 5
   content: Probabilistic PCA
 - type: lecture
-  date: '2026-09-17T17:00:00+03:30'
+  date: '2026-09-10T17:00:00+03:30'
   title: Probabilistic PCA
   overview: Probabilistic PCA
   topics: Probabilistic PCA
   lecture_num: 6
   content: Probabilistic PCA
 - type: lecture
-  date: '2026-09-22T17:00:00+03:30'
+  date: '2026-09-15T17:00:00+03:30'
   title: Variational Inference and Expectation Maximization
   overview: Variational Inference and Expectation Maximization
   topics: Variational Inference and Expectation Maximization
   lecture_num: 7
   content: Variational Inference and Expectation Maximization
 - type: lecture
-  date: '2026-09-24T17:00:00+03:30'
+  date: '2026-09-17T17:00:00+03:30'
   title: Variational Auto Encoders
   overview: Variational Auto Encoders
   topics: Variational Auto Encoders
   lecture_num: 8
   content: Variational Auto Encoders
 - type: lecture
-  date: '2026-09-29T17:00:00+03:30'
+  date: '2026-09-22T17:00:00+03:30'
   title: Variational Auto Encoders
   overview: Variational Auto Encoders
   topics: Variational Auto Encoders
@@ -66,105 +66,105 @@
   title: Fall Break
   content: No classes (Oct 1 - Oct 4)
 - type: lecture
-  date: '2026-10-06T17:00:00+03:30'
+  date: '2026-09-24T17:00:00+03:30'
+  title: Variational Auto Encoders
+  overview: Variational Auto Encoders
+  topics: Variational Auto Encoders
+  lecture_num: 10
+  content: Variational Auto Encoders
+- type: lecture
+  date: '2026-09-29T17:00:00+03:30'
   title: Markov Models
   overview: Markov Models
   topics: Markov Models
-  lecture_num: 10
+  lecture_num: 11
   content: Markov Models
 - type: lecture
+  date: '2026-10-06T17:00:00+03:30'
+  title: Hidden Markov Models
+  overview: Hidden Markov Models
+  topics: Hidden Markov Models
+  lecture_num: 12
+  content: Hidden Markov Models
+- type: lecture
   date: '2026-10-08T17:00:00+03:30'
-  title: RNN - Architecture
-  overview: RNN - Architecture
-  topics: RNN - Architecture
-  lecture_num: 11
-  content: RNN - Architecture
+  title: Linear Dynamical Systems
+  overview: Linear Dynamical Systems
+  topics: Linear Dynamical Systems
+  lecture_num: 13
+  content: Linear Dynamical Systems
 - type: lecture
   date: '2026-10-13T17:00:00+03:30'
-  title: RNN - Attention and Seq2Seq Models
-  overview: RNN - Attention and Seq2Seq Models
-  topics: RNN - Attention and Seq2Seq Models
-  lecture_num: 12
-  content: RNN - Attention and Seq2Seq Models
-- type: lecture
-  date: '2026-10-15T17:00:00+03:30'
-  title: MAMBA
-  overview: MAMBA
-  topics: MAMBA
-  lecture_num: 13
-  content: MAMBA
-- type: lecture
-  date: '2026-10-20T17:00:00+03:30'
   title: Diffusion Models - MHVAE
   overview: Diffusion Models - MHVAE
   topics: Diffusion Models - MHVAE
   lecture_num: 14
   content: Diffusion Models - MHVAE
 - type: lecture
-  date: '2026-10-22T17:00:00+03:30'
+  date: '2026-10-15T17:00:00+03:30'
   title: Diffusion Models - MHVAE
   overview: Diffusion Models - MHVAE
   topics: Diffusion Models - MHVAE
   lecture_num: 15
   content: Diffusion Models - MHVAE
 - type: lecture
-  date: '2026-10-27T17:00:00+03:30'
+  date: '2026-10-20T17:00:00+03:30'
   title: Diffusion Models - Implementation
   overview: Diffusion Models - Implementation
   topics: Diffusion Models - Implementation
   lecture_num: 16
   content: Diffusion Models - Implementation
 - type: lecture
-  date: '2026-10-29T17:00:00+03:30'
+  date: '2026-10-22T17:00:00+03:30'
   title: Diffusion Models - DDPM + DDIM
   overview: Diffusion Models - DDPM + DDIM
   topics: Diffusion Models - DDPM + DDIM
   lecture_num: 17
   content: Diffusion Models - DDPM + DDIM
 - type: lecture
-  date: '2026-11-03T17:00:00+03:30'
+  date: '2026-10-27T17:00:00+03:30'
   title: Diffusion Models - Score-based Model + SDE Perspective
   overview: Diffusion Models - Score-based Model + SDE Perspective
   topics: Diffusion Models - Score-based Model + SDE Perspective
   lecture_num: 18
   content: Diffusion Models - Score-based Model + SDE Perspective
 - type: lecture
-  date: '2026-11-05T17:00:00+03:30'
+  date: '2026-10-29T17:00:00+03:30'
   title: Diffusion Models - Applications
   overview: Diffusion Models - Applications
   topics: Diffusion Models - Applications
   lecture_num: 19
   content: Diffusion Models - Applications
 - type: lecture
-  date: '2026-11-10T17:00:00+03:30'
+  date: '2026-11-03T17:00:00+03:30'
   title: Transformers
   overview: Transformers
   topics: Transformers
   lecture_num: 20
   content: Transformers
 - type: lecture
-  date: '2026-11-12T17:00:00+03:30'
+  date: '2026-11-05T17:00:00+03:30'
   title: 'Transformers - Applications: Text and Image'
   overview: 'Transformers - Applications: Text and Image'
   topics: 'Transformers - Applications: Text and Image'
   lecture_num: 21
   content: 'Transformers - Applications: Text and Image'
 - type: lecture
-  date: '2026-11-17T17:00:00+03:30'
+  date: '2026-11-10T17:00:00+03:30'
   title: Transformers - VLM
   overview: Transformers - VLM
   topics: Transformers - VLM
   lecture_num: 22
   content: Transformers - VLM
 - type: lecture
-  date: '2026-11-19T17:00:00+03:30'
+  date: '2026-11-12T17:00:00+03:30'
   title: Transformers - VLM
   overview: Transformers - VLM
   topics: Transformers - VLM
   lecture_num: 23
   content: Transformers - VLM
 - type: lecture
-  date: '2026-11-24T17:00:00+03:30'
+  date: '2026-11-17T17:00:00+03:30'
   title: Hands on Transformer
   overview: Hands on Transformer
   topics: Hands on Transformer
