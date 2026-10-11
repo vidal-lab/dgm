@@ -1,12 +1,20 @@
 <div class="col col-1" style="color: #a94442 ;font-weight: bold;" data-label="Event">Exam</div>
 <div class="col col-1-2" style="font-weight: bold" data-label="Date">
-    {{ event.date | date: site.dateformat }}
-    {{ event.date | date: "%H:%M" }}
-    <br class="date-spliter"/>{{ event.date | date: "%A" }}
+    {{ include.event.date | date: site.dateformat }}
+    {{ include.event.date | date: "%H:%M" }}
+    <br class="date-spliter"/>{{ include.event.date | date: "%A" }}
 </div>
-<div class="col col-2" style="font-weight: bold" data-label="Description">
-    {{ include.event.description }}
+<div class="col col-2" style="font-weight: bold" data-label="Title">
+    {{ include.event.title }}
+    {% if include.event.location %}
+    <br><span style="font-weight: normal;">
+    {% if include.event.location_url %}
+    <a href="{{ include.event.location_url }}" target="_blank" rel="noopener">{{ include.event.location }}</a>
+    {% else %}
+    {{ include.event.location }}
+    {% endif %}
+    </span>
+    {% endif %}
 </div>
-<div class="col col-4 markdown-content" data-label="Course Material">
-    {{ include.event.content}}
-</div>
+<div class="col col-slides markdown-content" data-label="Slides">{{ include.event.content }}</div>
+<div class="col col-recording"></div>

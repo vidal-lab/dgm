@@ -3,3 +3,8 @@
   title: Quiz 1
   location: AGH 203
   content: In-person quiz.
+- type: quiz
+  date: '2026-10-22T13:45:00+03:30'
+  title: Quiz 2
+  location: AGH 203
+  content: In-person quiz (1:45 - 2:15 PM).

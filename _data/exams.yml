@@ -1,0 +1,6 @@
+- type: exam
+  date: '2026-12-11T15:00:00+03:30'
+  title: Final Exam
+  location: NBS AUD
+  location_url: https://facilities.upenn.edu/maps/locations/neural-behavioral-sciences-building
+  content: In-person exam (3:00 - 5:00 PM).

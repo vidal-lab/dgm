@@ -46,7 +46,7 @@ layout: default
         </div>
         
         {% comment %} Project rows are hidden for now; re-add site.data.projects to the concat below to bring them back. {% endcomment %}
-        {% assign all_events = site.data.lectures | concat: site.data.assignments | concat: site.data.events | concat: site.data.quizzes %}
+        {% assign all_events = site.data.lectures | concat: site.data.assignments | concat: site.data.events | concat: site.data.quizzes | concat: site.data.exams %}
         {% assign all_events_sorted = all_events | sort: 'date' %}
 
         {% for event in all_events_sorted %}
@@ -171,6 +171,11 @@ layout: default
 }
 
 .table-row-quiz {
+    border-left: 3px solid #a94442;
+    background: #fdf2f2;
+}
+
+.table-row-exam {
     border-left: 3px solid #a94442;
     background: #fdf2f2;
 }
