@@ -4,3 +4,9 @@
   hw_num: '1'
   action: release
   url: https://canvas.upenn.edu/courses/1937189/assignments/15133302
+- type: assignment
+  date: '2026-10-11T18:00:00+03:30'
+  title: Homework 2
+  hw_num: '2'
+  action: release
+  url: https://canvas.upenn.edu/courses/1937189/assignments/14748234

@@ -33,10 +33,14 @@
 {% endif %}
 {% assign all_events_sorted = all_events | sort: 'date' | reverse %}
 
+{% assign pinned_events = all_events_sorted | where: 'pinned', true %}
+{% assign unpinned_events = all_events_sorted | where_exp: 'e', 'e.pinned != true' %}
+{% assign final_events = pinned_events | concat: unpinned_events %}
+
 <div class="announcement-box" style="margin-top:30px">
 <h2>Updates</h2>
 <ul>
-    {% for n in all_events_sorted limit:3 %}
+    {% for n in final_events limit:3 %}
     <li class="no-p-margin">
         {% if n.type %}
             {% if n.type == 'lecture' %}
