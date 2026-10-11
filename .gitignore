@@ -87,3 +87,7 @@ _config.dev.yml
 
 # Schedule data files (generated from CSV)
 _events/schedule.csv
+
+# Lecture slides not ready to publish yet
+static_files/lectures/dgm26-lec15-rnn.pdf
+static_files/lectures/dgm26-lec16-rnn_attention.pdf

@@ -7,8 +7,8 @@ thumbnail: /static_files/presentations/lec8.png
 links: 
     - url: /static_files/lectures/dgm26-lec13-lds-foundation.pdf
       name: slides 13
-    - name: recording
-      disabled: true
+    - url: https://upenn.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3461280b-0581-4ed5-960d-b4dd015550be
+      name: recording
 ---
 **Suggested Readings:**
 - Introduction to Linear Dynamical Systems.

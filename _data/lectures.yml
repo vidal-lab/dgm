@@ -95,25 +95,25 @@
   content: Linear Dynamical Systems
 - type: lecture
   date: '2026-10-13T17:00:00+03:30'
-  title: Diffusion Models - MHVAE
-  overview: Diffusion Models - MHVAE
-  topics: Diffusion Models - MHVAE
+  title: Dynamic Textures
+  overview: Dynamic Textures
+  topics: Dynamic Textures
   lecture_num: 14
-  content: Diffusion Models - MHVAE
+  content: Dynamic Textures
 - type: lecture
   date: '2026-10-15T17:00:00+03:30'
-  title: Diffusion Models - MHVAE
-  overview: Diffusion Models - MHVAE
-  topics: Diffusion Models - MHVAE
+  title: Recurrent Neural Networks
+  overview: Recurrent Neural Networks
+  topics: Recurrent Neural Networks
   lecture_num: 15
-  content: Diffusion Models - MHVAE
+  content: Recurrent Neural Networks
 - type: lecture
   date: '2026-10-20T17:00:00+03:30'
-  title: Diffusion Models - Implementation
-  overview: Diffusion Models - Implementation
-  topics: Diffusion Models - Implementation
+  title: Recurrent Neural Networks and Attention Mechanisms
+  overview: Recurrent Neural Networks and Attention Mechanisms
+  topics: Recurrent Neural Networks and Attention Mechanisms
   lecture_num: 16
-  content: Diffusion Models - Implementation
+  content: Recurrent Neural Networks and Attention Mechanisms
 - type: lecture
   date: '2026-10-22T17:00:00+03:30'
   title: Diffusion Models - DDPM + DDIM
