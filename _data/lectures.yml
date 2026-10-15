@@ -116,11 +116,11 @@
   content: Recurrent Neural Networks and Attention Mechanisms
 - type: lecture
   date: '2026-10-22T17:00:00+03:30'
-  title: Diffusion Models - DDPM + DDIM
-  overview: Diffusion Models - DDPM + DDIM
-  topics: Diffusion Models - DDPM + DDIM
+  title: State Space Models, Selective State Space Models & MAMBA
+  overview: State Space Models, Selective State Space Models & MAMBA
+  topics: State Space Models, Selective State Space Models & MAMBA
   lecture_num: 17
-  content: Diffusion Models - DDPM + DDIM
+  content: State Space Models, Selective State Space Models & MAMBA
 - type: lecture
   date: '2026-10-27T17:00:00+03:30'
   title: Diffusion Models - Score-based Model + SDE Perspective
