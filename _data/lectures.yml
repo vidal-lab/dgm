@@ -176,11 +176,11 @@
   content: No classes (Thanksgiving)
 - type: lecture
   date: '2026-12-01T17:00:00+03:30'
-  title: TBD
-  overview: TBD
-  topics: TBD
+  title: State Space Models, Selective State Space Models
+  overview: State Space Models, Selective State Space Models
+  topics: State Space Models, Selective State Space Models
   lecture_num: 25
-  content: TBD
+  content: State Space Models, Selective State Space Models
 - type: lecture
   date: '2026-12-03T17:00:00+03:30'
   title: TBD
