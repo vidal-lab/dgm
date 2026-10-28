@@ -116,39 +116,39 @@
   content: Recurrent Neural Networks and Attention Mechanisms
 - type: lecture
   date: '2026-10-22T17:00:00+03:30'
-  title: State Space Models, Selective State Space Models & MAMBA
-  overview: State Space Models, Selective State Space Models & MAMBA
-  topics: State Space Models, Selective State Space Models & MAMBA
-  lecture_num: 17
-  content: State Space Models, Selective State Space Models & MAMBA
-- type: lecture
-  date: '2026-10-27T17:00:00+03:30'
-  title: Diffusion Models - Score-based Model + SDE Perspective
-  overview: Diffusion Models - Score-based Model + SDE Perspective
-  topics: Diffusion Models - Score-based Model + SDE Perspective
-  lecture_num: 18
-  content: Diffusion Models - Score-based Model + SDE Perspective
-- type: lecture
-  date: '2026-10-29T17:00:00+03:30'
-  title: Diffusion Models - Applications
-  overview: Diffusion Models - Applications
-  topics: Diffusion Models - Applications
-  lecture_num: 19
-  content: Diffusion Models - Applications
-- type: lecture
-  date: '2026-11-03T17:00:00+03:30'
   title: Transformers
   overview: Transformers
   topics: Transformers
-  lecture_num: 20
+  lecture_num: 17
   content: Transformers
 - type: lecture
+  date: '2026-10-27T17:00:00+03:30'
+  title: Transformers for Text
+  overview: Transformers for Text
+  topics: Transformers for Text
+  lecture_num: 18
+  content: Transformers for Text
+- type: lecture
+  date: '2026-10-29T17:00:00+03:30'
+  title: Diffusion Models
+  overview: Diffusion Models
+  topics: Diffusion Models
+  lecture_num: 19
+  content: Diffusion Models
+- type: lecture
+  date: '2026-11-03T17:00:00+03:30'
+  title: Diffusion Models
+  overview: Diffusion Models
+  topics: Diffusion Models
+  lecture_num: 20
+  content: Diffusion Models
+- type: lecture
   date: '2026-11-05T17:00:00+03:30'
-  title: 'Transformers - Applications: Text and Image'
-  overview: 'Transformers - Applications: Text and Image'
-  topics: 'Transformers - Applications: Text and Image'
+  title: Diffusion Models
+  overview: Diffusion Models
+  topics: Diffusion Models
   lecture_num: 21
-  content: 'Transformers - Applications: Text and Image'
+  content: Diffusion Models
 - type: lecture
   date: '2026-11-10T17:00:00+03:30'
   title: Transformers - VLM
@@ -165,11 +165,11 @@
   content: Transformers - VLM
 - type: lecture
   date: '2026-11-17T17:00:00+03:30'
-  title: Hands on Transformer
-  overview: Hands on Transformer
-  topics: Hands on Transformer
+  title: Latent Diffusion Models
+  overview: Latent Diffusion Models
+  topics: Latent Diffusion Models
   lecture_num: 24
-  content: Hands on Transformer
+  content: Latent Diffusion Models
 - type: break
   date: '2026-11-26T17:00:00+03:30'
   title: Thanksgiving Break

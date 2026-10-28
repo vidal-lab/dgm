@@ -15,30 +15,41 @@
         {% assign matched_lecture = l %}
     {% endif %}
 {% endfor %}
-{% assign slides_url = "" %}
-{% if matched_lecture %}
-    {% for link in matched_lecture.links %}
-        {% assign link_name_downcase = link.name | downcase %}
-        {% if link_name_downcase contains "slide" %}
-            {% assign slides_url = link.url %}
-        {% endif %}
-    {% endfor %}
-{% endif %}
-{% assign slides_override = "" %}
-{% if slides_url contains "dgm26-lec02-03-04-background.pdf" and include.event.lecture_num != 2 %}
-    {% assign slides_override = "see above" %}
-{% endif %}
-{% if slides_url contains "dgm26-lec05-06-ppca.pdf" and include.event.lecture_num != 5 %}
-    {% assign slides_override = "see above" %}
-{% endif %}
-{% if slides_url contains "dgm26-lec08-09-10-vae.pdf" and include.event.lecture_num != 8 %}
-    {% assign slides_override = "see above" %}
-{% endif %}
 <div class="col col-slides schedule-lecture-links" data-label="Slides">
-    {% if slides_override != "" %}
-    [<span class="link-disabled" title="Same slides as the first lecture using this file">{{ slides_override }}</span>]
-    {% elsif matched_lecture %}
-    {% include lecture_links.html lecture=matched_lecture filter="slide" hide_disabled=true %}
+    {% if matched_lecture %}
+        {% for link in matched_lecture.links %}
+            {% assign link_name_downcase = link.name | downcase %}
+            {% assign is_slide_link = false %}
+            {% if link_name_downcase contains "slide" or link_name_downcase contains "syllabus" %}
+                {% assign is_slide_link = true %}
+            {% endif %}
+            {% if is_slide_link %}
+                {% assign this_override = "" %}
+                {% if link.url contains "dgm26-lec02-03-04-background.pdf" and include.event.lecture_num != 2 %}
+                    {% assign this_override = "see above" %}
+                {% endif %}
+                {% if link.url contains "dgm26-lec05-06-ppca.pdf" and include.event.lecture_num != 5 %}
+                    {% assign this_override = "see above" %}
+                {% endif %}
+                {% if link.url contains "dgm26-lec08-09-10-vae.pdf" and include.event.lecture_num != 8 %}
+                    {% assign this_override = "see above" %}
+                {% endif %}
+                {% if link.url contains "dgm26-lec17-18-transformers.pdf" and include.event.lecture_num != 17 %}
+                    {% assign this_override = "see above" %}
+                {% endif %}
+                {% if this_override != "" %}
+                [<span class="link-disabled" title="Same slides as the first lecture using this file">{{ this_override }}</span>]
+                {% elsif link.disabled %}
+                {% else %}
+                [<a title="Download {{ link.name }}" href="
+                {% if link.url contains '://' %}
+                  {{ link.url }}
+                {% else %}
+                  {{ link.url | prepend: site.baseurl }}
+                {% endif %}">{{ link.name }}</a>]
+                {% endif %}
+            {% endif %}
+        {% endfor %}
     {% endif %}
     {% if include.event.lecture_num == 2 %}
     <br><span class="slides-updated-note-old">Updated on Sep 15</span>
@@ -48,8 +59,10 @@
     <br><span class="slides-updated-note-old">Updated on Oct 1</span>
     {% elsif include.event.lecture_num == 7 or include.event.lecture_num == 8 or include.event.lecture_num == 13 or include.event.lecture_num == 14 %}
     <br><span class="slides-updated-note-old">Updated on Oct 11</span>
-    {% elsif include.event.lecture_num == 15 or include.event.lecture_num == 16 or include.event.lecture_num == 17 %}
-    <br><span class="slides-updated-note">Updated on Oct 15</span>
+    {% elsif include.event.lecture_num == 15 or include.event.lecture_num == 16 %}
+    <br><span class="slides-updated-note-old">Updated on Oct 15</span>
+    {% elsif include.event.lecture_num == 17 or include.event.lecture_num == 18 or include.event.lecture_num == 19 or include.event.lecture_num == 20 or include.event.lecture_num == 21 or include.event.lecture_num == 24 %}
+    <br><span class="slides-updated-note">Updated on Oct 28</span>
     {% endif %}
 </div>
 <div class="col col-recording schedule-lecture-links" data-label="Recording">
