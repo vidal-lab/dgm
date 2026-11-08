@@ -122,69 +122,69 @@
   lecture_num: 17
   content: Transformers
 - type: lecture
-  date: '2026-10-27T17:00:00+03:30'
+  date: '2026-10-22T17:00:00+03:30'
   title: Transformers for Text
   overview: Transformers for Text
   topics: Transformers for Text
   lecture_num: 18
   content: Transformers for Text
 - type: lecture
-  date: '2026-10-29T17:00:00+03:30'
+  date: '2026-10-27T17:00:00+03:30'
   title: Diffusion Models
   overview: Diffusion Models
   topics: Diffusion Models
   lecture_num: 19
   content: Diffusion Models
 - type: lecture
-  date: '2026-11-03T17:00:00+03:30'
+  date: '2026-10-29T17:00:00+03:30'
   title: Diffusion Models
   overview: Diffusion Models
   topics: Diffusion Models
   lecture_num: 20
   content: Diffusion Models
 - type: lecture
-  date: '2026-11-05T17:00:00+03:30'
+  date: '2026-11-03T17:00:00+03:30'
   title: Diffusion Models
   overview: Diffusion Models
   topics: Diffusion Models
   lecture_num: 21
   content: Diffusion Models
 - type: lecture
-  date: '2026-11-10T17:00:00+03:30'
-  title: Transformers - VLM
-  overview: Transformers - VLM
-  topics: Transformers - VLM
+  date: '2026-11-05T17:00:00+03:30'
+  title: Diffusion Model Applications
+  overview: Diffusion Model Applications
+  topics: Diffusion Model Applications
   lecture_num: 22
-  content: Transformers - VLM
+  content: Diffusion Model Applications
+- type: lecture
+  date: '2026-11-10T17:00:00+03:30'
+  title: Image Editing with Diffusion Models
+  overview: Image Editing with Diffusion Models
+  topics: Image Editing with Diffusion Models
+  lecture_num: 23
+  content: Image Editing with Diffusion Models
 - type: lecture
   date: '2026-11-12T17:00:00+03:30'
-  title: Transformers - VLM
-  overview: Transformers - VLM
-  topics: Transformers - VLM
-  lecture_num: 23
-  content: Transformers - VLM
+  title: Score Matching with Diffusion Models
+  overview: Score Matching with Diffusion Models
+  topics: Score Matching with Diffusion Models
+  lecture_num: 24
+  content: Score Matching with Diffusion Models
 - type: lecture
   date: '2026-11-17T17:00:00+03:30'
-  title: Latent Diffusion Models
-  overview: Latent Diffusion Models
-  topics: Latent Diffusion Models
-  lecture_num: 24
-  content: Latent Diffusion Models
-- type: break
-  date: '2026-11-26T17:00:00+03:30'
-  title: Thanksgiving Break
-  content: No classes (Thanksgiving)
-- type: lecture
-  date: '2026-12-01T17:00:00+03:30'
   title: State Space Models, Selective State Space Models
   overview: State Space Models, Selective State Space Models
   topics: State Space Models, Selective State Space Models
   lecture_num: 25
   content: State Space Models, Selective State Space Models
 - type: lecture
-  date: '2026-12-03T17:00:00+03:30'
-  title: TBD
-  overview: TBD
-  topics: TBD
+  date: '2026-11-19T17:00:00+03:30'
+  title: Latent Diffusion Models
+  overview: Latent Diffusion Models
+  topics: Latent Diffusion Models
   lecture_num: 26
-  content: TBD
+  content: Latent Diffusion Models
+- type: break
+  date: '2026-11-26T17:00:00+03:30'
+  title: Thanksgiving Break
+  content: No classes (Thanksgiving)

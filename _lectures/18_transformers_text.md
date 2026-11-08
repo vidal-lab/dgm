@@ -1,7 +1,7 @@
 ---
 type: lecture
 lecture_num: 18
-date: 2026-10-27T17:00:00+3:30
+date: 2026-10-22T17:00:00+3:30
 title: Transformers for Text
 thumbnail: /static_files/presentations/lec8.png
 links: 
