@@ -151,11 +151,11 @@
   content: Diffusion Models
 - type: lecture
   date: '2026-11-05T17:00:00+03:30'
-  title: Diffusion Model Applications
-  overview: Diffusion Model Applications
-  topics: Diffusion Model Applications
+  title: Latent Diffusion Models
+  overview: Latent Diffusion Models
+  topics: Latent Diffusion Models
   lecture_num: 22
-  content: Diffusion Model Applications
+  content: Latent Diffusion Models
 - type: lecture
   date: '2026-11-10T17:00:00+03:30'
   title: Image Editing with Diffusion Models
@@ -172,18 +172,25 @@
   content: Score Matching with Diffusion Models
 - type: lecture
   date: '2026-11-17T17:00:00+03:30'
-  title: State Space Models, Selective State Space Models
-  overview: State Space Models, Selective State Space Models
-  topics: State Space Models, Selective State Space Models
+  title: Transformers for Vision and Language
+  overview: Transformers for Vision and Language
+  topics: Transformers for Vision and Language
   lecture_num: 25
-  content: State Space Models, Selective State Space Models
+  content: Transformers for Vision and Language
 - type: lecture
   date: '2026-11-19T17:00:00+03:30'
-  title: Latent Diffusion Models
-  overview: Latent Diffusion Models
-  topics: Latent Diffusion Models
+  title: Transformers for Vision and Language
+  overview: Transformers for Vision and Language
+  topics: Transformers for Vision and Language
   lecture_num: 26
-  content: Latent Diffusion Models
+  content: Transformers for Vision and Language
+- type: lecture
+  date: '2026-11-24T17:00:00+03:30'
+  title: Transformers for Vision
+  overview: Transformers for Vision
+  topics: Transformers for Vision
+  lecture_num: 27
+  content: Transformers for Vision
 - type: break
   date: '2026-11-26T17:00:00+03:30'
   title: Thanksgiving Break
@@ -193,12 +200,12 @@
   title: Flow Matching
   overview: Flow Matching
   topics: Flow Matching
-  lecture_num: 27
+  lecture_num: 28
   content: Flow Matching
 - type: lecture
   date: '2026-12-03T17:00:00+03:30'
   title: Flow Matching
   overview: Flow Matching
   topics: Flow Matching
-  lecture_num: 28
+  lecture_num: 29
   content: Flow Matching

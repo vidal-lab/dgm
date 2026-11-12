@@ -1,7 +1,7 @@
 ---
 type: lecture
-lecture_num: 27
-date: 2026-12-01T17:00:00+3:30
+lecture_num: 31
+date: 2026-12-10T17:00:00+3:30
 title: Flow Matching
 thumbnail: /static_files/presentations/lec.png
 links: 
