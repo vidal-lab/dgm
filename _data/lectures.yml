@@ -186,11 +186,11 @@
   content: Transformers for Vision and Language
 - type: lecture
   date: '2026-11-24T17:00:00+03:30'
-  title: Transformers for Vision
-  overview: Transformers for Vision
-  topics: Transformers for Vision
+  title: Flow Matching
+  overview: Flow Matching
+  topics: Flow Matching
   lecture_num: 27
-  content: Transformers for Vision
+  content: Flow Matching
 - type: break
   date: '2026-11-26T17:00:00+03:30'
   title: Thanksgiving Break

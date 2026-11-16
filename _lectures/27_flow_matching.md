@@ -2,7 +2,7 @@
 type: lecture
 lecture_num: 27
 date: 2026-11-24T17:00:00+3:30
-title: Transformers for Vision
+title: Flow Matching
 thumbnail: /static_files/presentations/lec.png
 links: 
     - name: slides
@@ -11,4 +11,4 @@ links:
       disabled: true
 ---
 **Suggested Readings:**
-- Transformers for Vision.
+- Flow Matching.
